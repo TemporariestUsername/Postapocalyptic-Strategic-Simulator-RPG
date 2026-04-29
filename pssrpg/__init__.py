@@ -1,0 +1,1 @@
+"""Postapocalyptic Strategic Simulator RPG."""
