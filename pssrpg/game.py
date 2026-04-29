@@ -11,8 +11,10 @@ from pssrpg.contract import (
     generate_offer,
 )
 from pssrpg.player import Player
+from pssrpg.io import GameIO, TerminalIO
 from pssrpg.scenario import rust_basin
 from pssrpg.world import World
+from pssrpg.territory import Terrain
 
 # How many open offers a faction may have queued at once.
 OFFER_QUEUE_CAP = 1
@@ -20,6 +22,7 @@ OFFER_QUEUE_CAP = 1
 REP_BONUS_CAP = 0.20
 # A reputation threshold below which a faction won't offer to the player.
 HOSTILE_THRESHOLD = -10
+RENOWN_SUCCESS_BONUS_CAP = 0.10
 
 
 @dataclass
@@ -28,6 +31,7 @@ class Game:
     player: Player = field(default_factory=lambda: Player(location_id=0))
     rng: random.Random = field(default_factory=lambda: random.Random(0xC0FFEE))
     offers: dict[int, list[Contract]] = field(default_factory=dict)
+    io: GameIO = field(default_factory=TerminalIO)
     quitting: bool = False
     outcome: str | None = None
 
@@ -48,16 +52,16 @@ class Game:
                 self._advance_world()
                 self._check_outcome()
         if self.outcome:
-            print()
-            print(f"### {self.outcome} ###")
+            self.io.write()
+            self.io.write(f"### {self.outcome} ###")
 
     def _intro(self) -> None:
-        print("=" * 60)
-        print("  POSTAPOCALYPTIC STRATEGIC SIMULATOR RPG  --  prototype")
-        print("=" * 60)
-        print("You are a wanderer in the Rust Basin. The Tally is on the march.")
-        print("Type letters to choose actions. [Q] quits.")
-        print()
+        self.io.write("=" * 60)
+        self.io.write("  POSTAPOCALYPTIC STRATEGIC SIMULATOR RPG  --  prototype")
+        self.io.write("=" * 60)
+        self.io.write("You are a wanderer in the Rust Basin. The Tally is on the march.")
+        self.io.write("Type letters to choose actions. [Q] quits.")
+        self.io.write()
 
     # -- rendering ------------------------------------------------------
 
@@ -69,21 +73,21 @@ class Game:
             f"{holder.short} ({holder.name})  rep {self._fmt_rep(self.player.rep(holder.id))}"
             if holder else "unclaimed"
         )
-        print("-" * 60)
-        print(f"  {cal}   resources={self.player.resources}")
-        print(f"  Location: {loc.name} [{loc.terrain.value}]   garrison={loc.garrison}")
-        print(f"  Held by:  {holder_str}")
+        self.io.write("-" * 60)
+        self.io.write(f"  {cal}   resources={self.player.resources}  renown={self.player.renown}")
+        self.io.write(f"  Location: {loc.name} [{loc.terrain.value}]   garrison={loc.garrison}")
+        self.io.write(f"  Held by:  {holder_str}")
         if self.player.active_contract:
             c = self.player.active_contract
             issuer = self.world.factions[c.issuer_id]
             target = self.world.territories[c.target_id]
             weeks_left = c.deadline_week - cal.absolute_week
-            print(f"  Contract: [{c.kind.value}] {c.description}")
-            print(f"            issuer={issuer.short}  target={target.name}  "
+            self.io.write(f"  Contract: [{c.kind.value}] {c.description}")
+            self.io.write(f"            issuer={issuer.short}  target={target.name}  "
                   f"weeks_left={weeks_left}")
         else:
-            print("  Contract: (none)")
-        print()
+            self.io.write("  Contract: (none)")
+        self.io.write()
 
     @staticmethod
     def _fmt_rep(r: int) -> str:
@@ -94,9 +98,9 @@ class Game:
 
     def _prompt(self) -> bool:
         """Read one player command. Returns True iff the world should advance."""
-        print("[T]ravel  [A]ccept  [W]ork  [I]nspect  [R]est  [N]ews  [Q]uit")
+        self.io.write("[T]ravel  [A]ccept  [W]ork  [M]arket  [I]nspect  [R]est  [N]ews  [Q]uit")
         try:
-            raw = input("> ").strip().lower()
+            raw = self.io.read("> ").strip().lower()
         except EOFError:
             self.quitting = True
             return False
@@ -104,121 +108,204 @@ class Game:
             return False
         cmd = raw[0]
         if cmd == "q":
-            self.quitting = True
-            return False
+            return self.apply_action("quit")
         if cmd == "t":
             return self._cmd_travel()
         if cmd == "a":
             return self._cmd_accept()
         if cmd == "w":
-            return self._cmd_work()
+            return self.apply_action("work")
         if cmd == "i":
             self._cmd_inspect()
             return False
+        if cmd == "m":
+            self._cmd_market()
+            return False
         if cmd == "r":
-            print("  You rest a week, eyes on the horizon.")
+            self.io.write("  You rest a week, eyes on the horizon.")
             return True
         if cmd == "n":
             self._cmd_news()
             return False
-        print("  ?")
+        self.io.write("  ?")
         return False
+
+    def available_actions(self) -> list[str]:
+        return ["travel", "accept", "work", "market_buy", "market_sell", "inspect", "rest", "news", "quit"]
+
+    def snapshot_state(self) -> dict[str, object]:
+        cal = self.world.calendar
+        loc = self.world.territories[self.player.location_id]
+        return {
+            "calendar": str(cal),
+            "week": cal.absolute_week,
+            "resources": self.player.resources,
+            "renown": self.player.renown,
+            "cargo": self.player.cargo,
+            "location": {"id": loc.id, "name": loc.name, "terrain": loc.terrain.value, "garrison": loc.garrison},
+            "contract": None if self.player.active_contract is None else {
+                "kind": self.player.active_contract.kind.value,
+                "description": self.player.active_contract.description,
+                "target_id": self.player.active_contract.target_id,
+                "issuer_id": self.player.active_contract.issuer_id,
+                "deadline_week": self.player.active_contract.deadline_week,
+            },
+            "outcome": self.outcome,
+        }
+
+    def apply_action(self, action: str, **kwargs: object) -> bool:
+        if action == "quit":
+            self.quitting = True
+            return False
+        if action == "work":
+            return self._cmd_work()
+        if action == "rest":
+            self.io.write("  You rest a week, eyes on the horizon.")
+            return True
+        if action == "news":
+            self._cmd_news()
+            return False
+        if action == "inspect":
+            self._cmd_inspect()
+            return False
+        if action == "travel":
+            return self._travel_index(int(kwargs.get("index", -1)))
+        if action == "accept":
+            return self._accept_offer(bool(kwargs.get("confirm", True)))
+        if action == "market_buy":
+            self._market_transact("buy")
+            return False
+        if action == "market_sell":
+            self._market_transact("sell")
+            return False
+        self.io.write("  ?")
+        return False
+
+    def drain_output(self) -> list[str]:
+        if isinstance(self.io, TerminalIO):
+            out = self.io.output[:]
+            self.io.output.clear()
+            return out
+        return []
 
     # -- commands -------------------------------------------------------
 
     def _cmd_travel(self) -> bool:
         neighbors = self.world.neighbors(self.player.location_id)
         if not neighbors:
-            print("  Nowhere to go.")
+            self.io.write("  Nowhere to go.")
             return False
-        print("  Adjacent territories:")
+        self.io.write("  Adjacent territories:")
         for i, t in enumerate(neighbors):
             holder = self.world.factions.get(t.holder_id) if t.holder_id is not None else None
             tag = holder.short if holder else "--"
-            print(f"    [{i}] {t.name:<14} {t.terrain.value:<11} held={tag} garr={t.garrison}")
+            self.io.write(f"    [{i}] {t.name:<14} {t.terrain.value:<11} held={tag} garr={t.garrison}")
         try:
-            raw = input("  go to> ").strip()
+            raw = self.io.read("  go to> ").strip()
         except EOFError:
             return False
         if not raw.isdigit():
             return False
-        idx = int(raw)
+        return self._travel_index(int(raw))
+
+    def _travel_index(self, idx: int) -> bool:
+        neighbors = self.world.neighbors(self.player.location_id)
         if not (0 <= idx < len(neighbors)):
             return False
         dest = neighbors[idx]
         self.player.location_id = dest.id
-        print(f"  You travel to {dest.name}.")
+        self.io.write(f"  You travel to {dest.name}.")
         return True
 
     def _cmd_accept(self) -> bool:
         loc = self.world.territories[self.player.location_id]
         if loc.holder_id is None:
-            print("  No faction here to deal with.")
+            self.io.write("  No faction here to deal with.")
             return False
         if self.player.active_contract is not None:
-            print("  You already have an active contract.")
+            self.io.write("  You already have an active contract.")
             return False
         holder = self.world.factions[loc.holder_id]
         if self.player.rep(holder.id) <= HOSTILE_THRESHOLD:
-            print(f"  {holder.short} will not deal with you.")
+            self.io.write(f"  {holder.short} will not deal with you.")
             return False
         queue = self.offers.get(holder.id, [])
         if not queue:
-            print(f"  {holder.short} has no work for you right now.")
+            self.io.write(f"  {holder.short} has no work for you right now.")
             return False
         offer = queue[0]
         target = self.world.territories[offer.target_id]
         cal_left = offer.deadline_week - self.world.calendar.absolute_week
-        print(f"  {holder.short} offers: {offer.description}")
-        print(f"    kind={offer.kind.value}  target={target.name}  "
+        self.io.write(f"  {holder.short} offers: {offer.description}")
+        self.io.write(f"    kind={offer.kind.value}  target={target.name}  "
               f"weeks={cal_left}  rep+{offer.rep_reward}/-{offer.rep_penalty}  "
               f"pay={offer.resource_reward}")
         try:
-            raw = input("  accept? [y/N]> ").strip().lower()
+            raw = self.io.read("  accept? [y/N]> ").strip().lower()
         except EOFError:
             return False
-        if raw.startswith("y"):
-            self.player.active_contract = offer
+        return self._accept_offer(raw.startswith("y"))
+
+    def _accept_offer(self, confirm: bool) -> bool:
+        loc = self.world.territories[self.player.location_id]
+        if loc.holder_id is None:
+            self.io.write("  No faction here to deal with.")
+            return False
+        if self.player.active_contract is not None:
+            self.io.write("  You already have an active contract.")
+            return False
+        holder = self.world.factions[loc.holder_id]
+        if self.player.rep(holder.id) <= HOSTILE_THRESHOLD:
+            self.io.write(f"  {holder.short} will not deal with you.")
+            return False
+        queue = self.offers.get(holder.id, [])
+        if not queue:
+            self.io.write(f"  {holder.short} has no work for you right now.")
+            return False
+        if confirm:
+            self.player.active_contract = queue[0]
             queue.pop(0)
-            print("  Accepted.")
+            self.io.write("  Accepted.")
         else:
-            print("  Declined.")
+            self.io.write("  Declined.")
         return False
 
     def _cmd_work(self) -> bool:
         c = self.player.active_contract
         if c is None:
-            print("  No active contract.")
+            self.io.write("  No active contract.")
             return False
         if self.player.location_id != c.target_id:
             target = self.world.territories[c.target_id]
-            print(f"  You must be at {target.name} to work this contract.")
+            self.io.write(f"  You must be at {target.name} to work this contract.")
             return False
         return self._resolve_contract(c)
 
     def _cmd_inspect(self) -> None:
-        print("  Reputation:")
+        self.io.write("  Reputation:")
         for fid, f in self.world.factions.items():
             status = "alive" if f.alive else "DEAD"
             held = len(self.world.territories_of(fid))
-            print(f"    {f.short} {f.name:<18} [{status}] rep={self._fmt_rep(self.player.rep(fid)):>4} "
+            self.io.write(f"    {f.short} {f.name:<18} [{status}] rep={self._fmt_rep(self.player.rep(fid)):>4} "
+                  f" title={self._title_for_rep(self.player.rep(fid)):<8} "
                   f"terr={held:>2} troops={f.troops:>4}")
+        self.io.write(f"  Trade cargo: {self.player.cargo} crate(s), basis={self.player.cargo_cost_basis}")
         if self.offers:
-            print("  Standing offers (where you've been seen):")
+            self.io.write("  Standing offers (where you've been seen):")
             for fid, queue in self.offers.items():
                 for c in queue:
                     f = self.world.factions[fid]
                     target = self.world.territories[c.target_id]
-                    print(f"    {f.short}: [{c.kind.value}] -> {target.name}")
+                    self.io.write(f"    {f.short}: [{c.kind.value}] -> {target.name}")
 
     def _cmd_news(self) -> None:
         recent = self.world.log[-15:]
         if not recent:
-            print("  Quiet on the wind.")
+            self.io.write("  Quiet on the wind.")
             return
-        print("  Recent events:")
+        self.io.write("  Recent events:")
         for line in recent:
-            print(f"    {line}")
+            self.io.write(f"    {line}")
 
     # -- contract resolution -------------------------------------------
 
@@ -228,35 +315,38 @@ class Game:
         target_holder_id = target.holder_id
         base = BASE_SUCCESS[c.kind]
         rep_bonus = max(-REP_BONUS_CAP, min(REP_BONUS_CAP, self.player.rep(issuer.id) * 0.01))
-        chance = max(0.05, min(0.98, base + rep_bonus))
+        renown_bonus = min(RENOWN_SUCCESS_BONUS_CAP, self.player.renown * 0.002)
+        chance = max(0.05, min(0.98, base + rep_bonus + renown_bonus))
         roll = self.rng.random()
         success = roll < chance
-        print(f"  You spend a week on the work. (chance {chance:.0%}, roll {roll:.2f})")
+        self.io.write(f"  You spend a week on the work. (chance {chance:.0%}, roll {roll:.2f})")
 
         if success:
             self.player.adjust_rep(issuer.id, c.rep_reward)
             self.player.resources += c.resource_reward
-            print(f"  SUCCESS. {issuer.short} rep +{c.rep_reward}, "
+            self.player.renown += max(1, c.rep_reward // 2)
+            self.io.write(f"  SUCCESS. {issuer.short} rep +{c.rep_reward}, "
                   f"+{c.resource_reward} resources.")
             if c.kind is ContractKind.INTEL and target_holder_id not in (None, issuer.id):
                 self.player.adjust_rep(target_holder_id, -3)
                 victim = self.world.factions[target_holder_id]
-                print(f"  You were noticed; {victim.short} rep -3.")
+                self.io.write(f"  You were noticed; {victim.short} rep -3.")
             if c.kind is ContractKind.SABOTAGE:
                 cut = max(1, int(target.garrison * 0.30))
                 target.garrison = max(0, target.garrison - cut)
-                print(f"  Sabotage cuts {target.name} garrison by {cut}.")
+                self.io.write(f"  Sabotage cuts {target.name} garrison by {cut}.")
                 if target_holder_id not in (None, issuer.id):
                     self.player.adjust_rep(target_holder_id, -15)
                     victim = self.world.factions[target_holder_id]
-                    print(f"  {victim.short} rep -15.")
+                    self.io.write(f"  {victim.short} rep -15.")
         else:
             self.player.adjust_rep(issuer.id, -c.rep_penalty)
-            print(f"  FAILURE. {issuer.short} rep -{c.rep_penalty}.")
+            self.player.renown = max(0, self.player.renown - 1)
+            self.io.write(f"  FAILURE. {issuer.short} rep -{c.rep_penalty}.")
             if c.kind is ContractKind.SABOTAGE and target_holder_id not in (None, issuer.id):
                 self.player.adjust_rep(target_holder_id, -5)
                 victim = self.world.factions[target_holder_id]
-                print(f"  You were caught; {victim.short} rep -5.")
+                self.io.write(f"  You were caught; {victim.short} rep -5.")
 
         self.player.active_contract = None
         return True
@@ -272,12 +362,83 @@ class Game:
         if c is not None:
             issuer = self.world.factions[c.issuer_id]
             if not issuer.alive:
-                print(f"  ({issuer.short} has been eliminated; contract void.)")
+                self.io.write(f"  ({issuer.short} has been eliminated; contract void.)")
                 self.player.active_contract = None
             elif c.is_expired(self.world.calendar.absolute_week):
                 self.player.adjust_rep(c.issuer_id, -c.rep_penalty)
-                print(f"  Contract expired. {issuer.short} rep -{c.rep_penalty}.")
+                self.io.write(f"  Contract expired. {issuer.short} rep -{c.rep_penalty}.")
                 self.player.active_contract = None
+
+    def _cmd_market(self) -> None:
+        loc = self.world.territories[self.player.location_id]
+        price = self._market_price()
+        self.io.write(f"  Bazaar at {loc.name}: price={price} resources/crate.")
+        self.io.write(f"  You hold {self.player.cargo} crate(s).")
+        self.io.write("  [B]uy one  [S]ell one  [L]eave")
+        try:
+            raw = self.io.read("  market> ").strip().lower()
+        except EOFError:
+            return
+        if not raw:
+            return
+        cmd = raw[0]
+        if cmd == "b":
+            self._market_transact("buy")
+            return
+        if cmd == "s":
+            self._market_transact("sell")
+
+    def _market_transact(self, mode: str) -> None:
+        price = self._market_price()
+        if mode == "buy":
+            if self.player.resources < price:
+                self.io.write("  Not enough resources.")
+                return
+            self.player.resources -= price
+            self.player.cargo += 1
+            self.player.cargo_cost_basis += price
+            self.io.write(f"  Bought 1 crate for {price}.")
+            return
+        if self.player.cargo <= 0:
+            self.io.write("  You have nothing to sell.")
+            return
+        avg_basis = self.player.cargo_cost_basis // self.player.cargo
+        self.player.cargo -= 1
+        self.player.cargo_cost_basis -= avg_basis
+        self.player.resources += price
+        delta = price - avg_basis
+        if delta > 0:
+            self.player.renown += 1
+            self.io.write(f"  Sold 1 crate for {price}. Profit {delta}. Renown +1.")
+        else:
+            self.io.write(f"  Sold 1 crate for {price}.")
+
+    def _market_price(self) -> int:
+        loc = self.world.territories[self.player.location_id]
+        terrain_base = {
+            Terrain.RUINS: 5,
+            Terrain.WILDS: 4,
+            Terrain.IRRADIATED: 3,
+            Terrain.FERTILE: 2,
+            Terrain.FORTIFIED: 6,
+        }.get(loc.terrain, 4)
+        week = self.world.calendar.absolute_week
+        swing = ((loc.id * 7 + week * 3) % 5) - 2
+        return max(1, terrain_base + swing)
+
+    @staticmethod
+    def _title_for_rep(rep: int) -> str:
+        if rep >= 40:
+            return "champion"
+        if rep >= 20:
+            return "retainer"
+        if rep >= 8:
+            return "ally"
+        if rep <= -20:
+            return "nemesis"
+        if rep <= -8:
+            return "suspect"
+        return "stranger"
 
     def _refresh_offers(self) -> None:
         cal_week = self.world.calendar.absolute_week
