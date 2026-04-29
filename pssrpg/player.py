@@ -12,6 +12,9 @@ class Player:
     location_id: int = 0
     reputation: dict[int, int] = field(default_factory=dict)
     resources: int = 10
+    renown: int = 0
+    cargo: int = 0
+    cargo_cost_basis: int = 0
     active_contract: Contract | None = None
 
     def rep(self, faction_id: int) -> int:

@@ -10,6 +10,7 @@ dependencies = [
 [project.scripts]
 pssrpg = "pssrpg.game:main"
 pssrpg-sim = "pssrpg.simulate:main"
+pssrpg-gui = "pssrpg.gui:main"
 
 [build-system]
 requires = ["setuptools>=68"]
