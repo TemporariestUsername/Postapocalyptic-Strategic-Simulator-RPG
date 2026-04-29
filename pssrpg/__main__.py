@@ -1,3 +1,3 @@
-from pssrpg.simulate import main
+from pssrpg.game import main
 
 raise SystemExit(main())

@@ -96,9 +96,9 @@ One turn = one week. Each turn:
 - **Lose.** The Tally controls a majority of the basin, OR the player party
   wipes with no designated heir.
 
-## Prototype Scope (this branch)
+## Prototype Scope
 
-In scope:
+**v0.1 — living world (landed):**
 - Calendar that ticks weekly with monthly/yearly rollover.
 - Static Rust Basin map (15 territories, hand-authored adjacency).
 - 7 factions with ideology, leader, troops, resources, holdings.
@@ -106,11 +106,25 @@ In scope:
   enemy territory if RNG passes its aggression check; combat resolved by
   weighted force comparison.
 - Monthly production / recruitment; yearly leader aging and succession.
-- Headless `python -m pssrpg` runner that simulates N years and prints
-  the political map state at each year boundary.
+- Headless `python -m pssrpg.simulate` runner that simulates N years and
+  prints the political map state at each year boundary.
+
+**v0.2 — player layer (landed):**
+- Wanderer with location, resources, and a per-faction reputation map.
+- Travel one adjacent territory per week (one action per turn).
+- Faction contracts generated monthly per faction; offered when the
+  player visits a held territory. Kinds: scavenge, courier, intel,
+  sabotage. Each has a deadline, reward, and penalty.
+- Contract resolution at the target territory: probability roll modified
+  by player reputation with the issuer. Sabotage and intel can damage
+  reputation with the *target* faction.
+- Win / loss outcomes: The Tally eliminated (win) or holds the majority
+  of the map (loss).
+- Text REPL (`python -m pssrpg`) with travel, accept, work, inspect,
+  rest, news, quit.
 
 Out of scope (later branches):
-- Player character, party, inventory, skills.
+- Party (still solo); recruitable named NPCs.
 - Skirmish or Battle combat.
 - Map rendering (`tcod` is a declared dependency for when we add it).
 - Save / load.

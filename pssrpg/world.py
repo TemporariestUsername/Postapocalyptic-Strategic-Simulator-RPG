@@ -24,13 +24,28 @@ class World:
     def neighbors(self, territory_id: int) -> list[Territory]:
         return [self.territories[n] for n in self.adjacency.get(territory_id, ())]
 
-    def tick(self) -> None:
+    def tick(self) -> tuple[bool, bool]:
         month_rolled, year_rolled = self.calendar.tick()
         self._faction_actions()
         if month_rolled:
             self._monthly()
         if year_rolled:
             self._yearly()
+        return month_rolled, year_rolled
+
+    def majority_holder(self) -> int | None:
+        """Returns faction id holding > 50% of territories, else None."""
+        held: dict[int, int] = {}
+        for t in self.territories.values():
+            if t.holder_id is None:
+                continue
+            held[t.holder_id] = held.get(t.holder_id, 0) + 1
+        if not held:
+            return None
+        leader_id, count = max(held.items(), key=lambda kv: kv[1])
+        if count * 2 > len(self.territories):
+            return leader_id
+        return None
 
     def _faction_actions(self) -> None:
         # Iterate over a snapshot so eliminations during the loop are safe.

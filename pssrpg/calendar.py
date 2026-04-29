@@ -27,5 +27,12 @@ class Calendar:
                 year_rolled = True
         return month_rolled, year_rolled
 
+    @property
+    def absolute_week(self) -> int:
+        """Monotonic week index. Useful for deadlines."""
+        return (self.year * WEEKS_PER_YEAR
+                + (self.month - 1) * WEEKS_PER_MONTH
+                + (self.week - 1))
+
     def __str__(self) -> str:
         return f"PC{self.year:03d}-M{self.month:02d}-W{self.week}"

@@ -8,7 +8,8 @@ dependencies = [
 ]
 
 [project.scripts]
-pssrpg = "pssrpg.simulate:main"
+pssrpg = "pssrpg.game:main"
+pssrpg-sim = "pssrpg.simulate:main"
 
 [build-system]
 requires = ["setuptools>=68"]
