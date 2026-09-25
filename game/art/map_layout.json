@@ -1,0 +1,332 @@
+{
+ "size": [
+  1600,
+  1000
+ ],
+ "nodes": {
+  "ledger": [
+   1080,
+   170
+  ],
+  "chainhold": [
+   950,
+   300
+  ],
+  "weepwater": [
+   1220,
+   310
+  ],
+  "tollgate": [
+   1090,
+   430
+  ],
+  "cathedral": [
+   720,
+   170
+  ],
+  "shimmer": [
+   590,
+   290
+  ],
+  "stillhollow": [
+   820,
+   330
+  ],
+  "vault": [
+   290,
+   150
+  ],
+  "antenna": [
+   440,
+   250
+  ],
+  "rampart": [
+   170,
+   420
+  ],
+  "barbwire": [
+   320,
+   360
+  ],
+  "muster": [
+   230,
+   610
+  ],
+  "gasworks": [
+   430,
+   510
+  ],
+  "sumpton": [
+   570,
+   430
+  ],
+  "flarestack": [
+   410,
+   690
+  ],
+  "cinder": [
+   780,
+   530
+  ],
+  "crosswind": [
+   640,
+   650
+  ],
+  "oatmeadow": [
+   560,
+   860
+  ],
+  "greenwell": [
+   730,
+   790
+  ],
+  "tanglefield": [
+   370,
+   870
+  ],
+  "howlpit": [
+   1060,
+   840
+  ],
+  "skullfork": [
+   900,
+   710
+  ],
+  "redmile": [
+   1170,
+   650
+  ],
+  "brinecastle": [
+   1400,
+   560
+  ],
+  "rustharbor": [
+   1330,
+   790
+  ],
+  "gullrock": [
+   1285,
+   200
+  ]
+ },
+ "edges": [
+  [
+   "ledger",
+   "chainhold"
+  ],
+  [
+   "ledger",
+   "weepwater"
+  ],
+  [
+   "chainhold",
+   "tollgate"
+  ],
+  [
+   "weepwater",
+   "tollgate"
+  ],
+  [
+   "weepwater",
+   "gullrock"
+  ],
+  [
+   "chainhold",
+   "stillhollow"
+  ],
+  [
+   "cathedral",
+   "stillhollow"
+  ],
+  [
+   "cathedral",
+   "shimmer"
+  ],
+  [
+   "cathedral",
+   "ledger"
+  ],
+  [
+   "shimmer",
+   "antenna"
+  ],
+  [
+   "shimmer",
+   "sumpton"
+  ],
+  [
+   "stillhollow",
+   "cinder"
+  ],
+  [
+   "vault",
+   "antenna"
+  ],
+  [
+   "vault",
+   "barbwire"
+  ],
+  [
+   "antenna",
+   "barbwire"
+  ],
+  [
+   "barbwire",
+   "rampart"
+  ],
+  [
+   "rampart",
+   "muster"
+  ],
+  [
+   "barbwire",
+   "gasworks"
+  ],
+  [
+   "muster",
+   "gasworks"
+  ],
+  [
+   "muster",
+   "flarestack"
+  ],
+  [
+   "gasworks",
+   "sumpton"
+  ],
+  [
+   "gasworks",
+   "flarestack"
+  ],
+  [
+   "sumpton",
+   "cinder"
+  ],
+  [
+   "tollgate",
+   "cinder"
+  ],
+  [
+   "cinder",
+   "crosswind"
+  ],
+  [
+   "crosswind",
+   "flarestack"
+  ],
+  [
+   "crosswind",
+   "greenwell"
+  ],
+  [
+   "crosswind",
+   "skullfork"
+  ],
+  [
+   "flarestack",
+   "tanglefield"
+  ],
+  [
+   "tanglefield",
+   "oatmeadow"
+  ],
+  [
+   "oatmeadow",
+   "greenwell"
+  ],
+  [
+   "greenwell",
+   "skullfork"
+  ],
+  [
+   "skullfork",
+   "howlpit"
+  ],
+  [
+   "howlpit",
+   "redmile"
+  ],
+  [
+   "redmile",
+   "tollgate"
+  ],
+  [
+   "redmile",
+   "rustharbor"
+  ],
+  [
+   "howlpit",
+   "rustharbor"
+  ],
+  [
+   "rustharbor",
+   "brinecastle"
+  ],
+  [
+   "brinecastle",
+   "gullrock"
+  ],
+  [
+   "cinder",
+   "redmile"
+  ],
+  [
+   "sumpton",
+   "crosswind"
+  ],
+  [
+   "tollgate",
+   "brinecastle"
+  ]
+ ],
+ "river": [
+  [
+   1060,
+   120
+  ],
+  [
+   1075,
+   200
+  ],
+  [
+   1060,
+   300
+  ],
+  [
+   1040,
+   400
+  ],
+  [
+   980,
+   470
+  ],
+  [
+   870,
+   520
+  ],
+  [
+   820,
+   560
+  ],
+  [
+   900,
+   600
+  ],
+  [
+   1030,
+   610
+  ],
+  [
+   1150,
+   560
+  ],
+  [
+   1260,
+   590
+  ],
+  [
+   1340,
+   640
+  ]
+ ]
+}

@@ -1,0 +1,1076 @@
+{
+ "style": "Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame.",
+ "entries": [
+  {
+   "id": "warlord_tallyman",
+   "kind": "portrait",
+   "out": "portraits/warlord_tallyman.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: The Tallyman, gaunt pale slaver-emperor in his sixties, hollow cheeks, shaved head, long black oilcloth coat hung with brass tally-chains and counting beads, a crown made of rusted iron shackles, cold calculating grey eyes, ink-stained fingers holding a ledger. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_tally_heir",
+   "kind": "portrait",
+   "out": "portraits/warlord_tally_heir.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Iola Vane, the Tallyman's daughter and heir, sharp severe woman in her thirties, slicked black hair, high collar of chain mail, a brass monocle, faint cruel smile, bone-white face paint lines counting down her cheek. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_jackabone",
+   "kind": "portrait",
+   "out": "portraits/warlord_jackabone.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Jackabone, hulking scarred biker warlord of the Bone Wolves, wearing a helmet made from a giant wolf skull, spiked leather and chain, tattooed neck, grinning with filed teeth, motorcycle headlight glow behind him. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_wolves_heir",
+   "kind": "portrait",
+   "out": "portraits/warlord_wolves_heir.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Snarl, young feral biker woman, shaved head with a single red braid, facial scars, goggles on forehead, wolf-fang necklace, snarling. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_harrow",
+   "kind": "portrait",
+   "out": "portraits/warlord_harrow.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Mama Harrow, weathered old woman warlord of a fuel refinery, soot-black face, welding goggles pushed up on grey braids, oil-stained leather apron over armor, gas flare fire reflected in her eyes, pipe in her mouth. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_gas_heir",
+   "kind": "portrait",
+   "out": "portraits/warlord_gas_heir.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Pike Harrow, Mama Harrow's grandson, lean young man in a fireproof coat, burn scars on one side of his face, wrench on his shoulder, ambitious eyes. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_kingfisher",
+   "kind": "portrait",
+   "out": "portraits/warlord_kingfisher.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Kingfisher, tall charismatic pirate king of the salt coast, weathered dark skin, crown made from rusted ship rivets and seashells, long salt-crusted coat, harpoon over his shoulder, gold teeth. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_salt_heir",
+   "kind": "portrait",
+   "out": "portraits/warlord_salt_heir.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Brine Maud, broad-shouldered sea-raider woman, sun-bleached hair in knots, tattooed arms with anchor chains, rusted boarding hook, squinting against the salt wind. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_lamplighter",
+   "kind": "portrait",
+   "out": "portraits/warlord_lamplighter.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: The Lamplighter, masked prophet of a psychic cult, face hidden behind a mask of fused glowing crater-glass shards, violet light leaking from the eye holes, hooded tattered robes covered in wires and tiny lamps. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_glass_heir",
+   "kind": "portrait",
+   "out": "portraits/warlord_glass_heir.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Choir, androgynous young cultist with glass shards embedded in their shaved scalp like a crown, pale skin, faintly glowing violet veins, serene unsettling expression. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_ruddick",
+   "kind": "portrait",
+   "out": "portraits/warlord_ruddick.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Colonel Ruddick, grizzled militarist warlord in his fifties, square jaw, grey stubble, patched olive military greatcoat covered in scavenged medals, gas mask hanging on his chest, iron-wreath insignia, stern disciplined glare. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_wreath_heir",
+   "kind": "portrait",
+   "out": "portraits/warlord_wreath_heir.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Major Sallow, lean severe officer woman in her forties, close-cropped hair, olive fatigues with barbed-wire armband, binoculars round her neck, a thin scar across her lip. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_granny_oat",
+   "kind": "portrait",
+   "out": "portraits/warlord_granny_oat.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Granny Oat, tough old farmer matriarch of a farming commune, deeply wrinkled sun-browned face, wide straw sunhat with a bullet hole, double-barrel shotgun on her shoulder, kind but steely eyes, windmill in the dusk behind her. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_free_heir",
+   "kind": "portrait",
+   "out": "portraits/warlord_free_heir.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Wheaton, big gentle farmer man in his thirties, beard, patched overalls over improvised plate armor, pitchfork, anxious determined expression. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_solace",
+   "kind": "portrait",
+   "out": "portraits/warlord_solace.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Director Solace, bunker technocrat leader, clean white hazmat suit with blue trim, transparent visor pushed back, perfectly neat silver hair, faint cold smile, glowing cyan data-tablet light on the face. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "warlord_concord_heir",
+   "kind": "portrait",
+   "out": "portraits/warlord_concord_heir.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Adjunct Six, young bunker-born technician with pallid skin who has never seen the sun, cyan-lensed goggles, cables braided into their hair, sterile white jumpsuit. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_gunlugger_m",
+   "kind": "portrait",
+   "out": "portraits/pc_gunlugger_m.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A man, a massive heavily-armed gunlugger, bandolier of shells, a heavy machine gun over the shoulder, scrap-plate armor. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_gunlugger_f",
+   "kind": "portrait",
+   "out": "portraits/pc_gunlugger_f.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A woman, a massive heavily-armed gunlugger, bandolier of shells, a heavy machine gun over the shoulder, scrap-plate armor. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_battlebabe_m",
+   "kind": "portrait",
+   "out": "portraits/pc_battlebabe_m.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A man, a dangerous, effortlessly cool battlebabe duelist, twin revolvers or a long knife, long dark coat, calm deadly half-smile. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_battlebabe_f",
+   "kind": "portrait",
+   "out": "portraits/pc_battlebabe_f.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A woman, a dangerous, effortlessly cool battlebabe duelist, twin revolvers or a long knife, long dark coat, calm deadly half-smile. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_brainer_m",
+   "kind": "portrait",
+   "out": "portraits/pc_brainer_m.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A man, an eerie brainer psychic with a strange pale stare, skull-fitted scavenged electronics, a faint violet aura, unnervingly still. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_brainer_f",
+   "kind": "portrait",
+   "out": "portraits/pc_brainer_f.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A woman, an eerie brainer psychic with a strange pale stare, skull-fitted scavenged electronics, a faint violet aura, unnervingly still. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_angel_m",
+   "kind": "portrait",
+   "out": "portraits/pc_angel_m.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A man, a wasteland angel field-medic, stained medical apron over leather armor, red-cross armband made of tape, stethoscope, tired compassionate eyes. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_angel_f",
+   "kind": "portrait",
+   "out": "portraits/pc_angel_f.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A woman, a wasteland angel field-medic, stained medical apron over leather armor, red-cross armband made of tape, stethoscope, tired compassionate eyes. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_driver_m",
+   "kind": "portrait",
+   "out": "portraits/pc_driver_m.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A man, a wasteland driver, road-goggles, cracked leather driving jacket, grease smears, car keys on a chain, restless grin. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_driver_f",
+   "kind": "portrait",
+   "out": "portraits/pc_driver_f.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A woman, a wasteland driver, road-goggles, cracked leather driving jacket, grease smears, car keys on a chain, restless grin. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_savvyhead_m",
+   "kind": "portrait",
+   "out": "portraits/pc_savvyhead_m.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A man, a savvyhead tinkerer, magnifying lenses on a head-rig, tool belt, burned fingers, a strange half-built device crackling in hand. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_savvyhead_f",
+   "kind": "portrait",
+   "out": "portraits/pc_savvyhead_f.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A woman, a savvyhead tinkerer, magnifying lenses on a head-rig, tool belt, burned fingers, a strange half-built device crackling in hand. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_hocus_m",
+   "kind": "portrait",
+   "out": "portraits/pc_hocus_m.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A man, a hocus cult prophet, ragged robes with ash-painted sigils, burning eyes, a staff hung with bones and bells, followers' candles behind. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_hocus_f",
+   "kind": "portrait",
+   "out": "portraits/pc_hocus_f.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A woman, a hocus cult prophet, ragged robes with ash-painted sigils, burning eyes, a staff hung with bones and bells, followers' candles behind. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_skinner_m",
+   "kind": "portrait",
+   "out": "portraits/pc_skinner_m.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A man, a skinner, beautiful wasteland performer, painted face, jewelry made from salvaged circuitry, a battered guitar, magnetic smoldering gaze. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "pc_skinner_f",
+   "kind": "portrait",
+   "out": "portraits/pc_skinner_f.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: A woman, a skinner, beautiful wasteland performer, painted face, jewelry made from salvaged circuitry, a battered guitar, magnetic smoldering gaze. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_mako",
+   "kind": "portrait",
+   "out": "portraits/npc_mako.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Mako Grist, gunlugger, bald black man built like a door, scrap-plate pauldron, belt-fed gun, calm heavy eyes. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_hessa",
+   "kind": "portrait",
+   "out": "portraits/npc_hessa.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Big Hessa, gunlugger woman, huge and scarred, blonde buzzcut, riot armor and a sawn-off auto-shotgun, laughing. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_rook",
+   "kind": "portrait",
+   "out": "portraits/npc_rook.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Rook Tallow, old gunlugger veteran, grey beard, one eye patched, rusted helmet, bolt-action rifle. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_vesper",
+   "kind": "portrait",
+   "out": "portraits/npc_vesper.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Vesper Lark, battlebabe, lithe woman with a sharp black bob, long red scarf, two revolvers, bored lethal look. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_sable",
+   "kind": "portrait",
+   "out": "portraits/npc_sable.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Sable Knox, battlebabe, elegant man with a pencil moustache and duster coat, a machete behind his back. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_jinx",
+   "kind": "portrait",
+   "out": "portraits/npc_jinx.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Jinx Maribel, battlebabe, young freckled woman with wild copper curls and knives strapped everywhere, mischievous grin. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_tem",
+   "kind": "portrait",
+   "out": "portraits/npc_tem.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Hollow Tem, brainer, pale bald young man with ash-grey lips and dark-ringed empty eyes, wires stapled to his temples. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_pim",
+   "kind": "portrait",
+   "out": "portraits/npc_pim.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Oracle Pim, brainer, tiny old woman with milky blind eyes and a knitted shawl, uncanny knowing smile. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_quill",
+   "kind": "portrait",
+   "out": "portraits/npc_quill.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Mister Quill, brainer, thin man in a moth-eaten suit and bowler hat, violet-tinted spectacles, needle-like fingers. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_rennet",
+   "kind": "portrait",
+   "out": "portraits/npc_rennet.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Doc Rennet, angel, middle-aged woman with a surgical mask around her neck, bloodied apron, round glasses, exhausted. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_stitch",
+   "kind": "portrait",
+   "out": "portraits/npc_stitch.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Stitch Amadou, angel, broad kind-faced man with suture scars on his own arms, medical satchel, dreadlocks. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_liss",
+   "kind": "portrait",
+   "out": "portraits/npc_liss.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Saint Liss, angel, young serene woman with shaved head and white face paint, bone rosary, bandages. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_juna",
+   "kind": "portrait",
+   "out": "portraits/npc_juna.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Hotwire Juna, driver, grinning young woman in aviator goggles and flight jacket, grease on cheek, spark plug earrings. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_okafor",
+   "kind": "portrait",
+   "out": "portraits/npc_okafor.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Gears Okafor, driver, big-bearded man in a mechanic's jumpsuit, welding scars, steering wheel medallion. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_kettle",
+   "kind": "portrait",
+   "out": "portraits/npc_kettle.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Dash Kettle, driver, wiry androgynous youth with a shaved undercut, racing leathers, nervous energy. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_vole",
+   "kind": "portrait",
+   "out": "portraits/npc_vole.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Tinker Vole, savvyhead, hunched rat-faced little man with a jeweler's loupe, a crackling tesla glove. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_nan",
+   "kind": "portrait",
+   "out": "portraits/npc_nan.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Solder Nan, savvyhead, grandmotherly woman with circuit-board jewelry and a soldering iron tucked behind one ear. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_wensley",
+   "kind": "portrait",
+   "out": "portraits/npc_wensley.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Arc Wensley, savvyhead, young man with burned eyebrows, static-frizzed hair, a backpack battery sparking. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_cinder",
+   "kind": "portrait",
+   "out": "portraits/npc_cinder.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Mother Cinder, hocus, tall gaunt woman with soot-blackened hands and ember-glowing eyes, crown of burnt twigs. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_lantern",
+   "kind": "portrait",
+   "out": "portraits/npc_lantern.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Brother Lantern, hocus, portly bearded preacher carrying a lit oil lantern, rags painted with eyes. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_moss",
+   "kind": "portrait",
+   "out": "portraits/npc_moss.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Prophet Moss, hocus, wild old hermit with lichen-green beard, bones braided into his hair, feverish stare. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_rue",
+   "kind": "portrait",
+   "out": "portraits/npc_rue.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Velvet Rue, skinner, glamorous woman with a shaved side and silver-painted lips, feather boa made of scrap wire. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_lyre",
+   "kind": "portrait",
+   "out": "portraits/npc_lyre.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Lyre Castellan, skinner, beautiful long-haired man with kohl eyes, a cracked violin, scarves. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "npc_honey",
+   "kind": "portrait",
+   "out": "portraits/npc_honey.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: Honey Dusk, skinner, sultry older woman with a scarred smile, cigarette holder, sequined jacket patched with leather. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_01",
+   "kind": "portrait",
+   "out": "portraits/officer_01.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a one-armed gang lieutenant with a hook and a mohawk. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_02",
+   "kind": "portrait",
+   "out": "portraits/officer_02.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a stern woman enforcer with a gas mask pushed up and a rifle. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_03",
+   "kind": "portrait",
+   "out": "portraits/officer_03.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a sly old quartermaster with gold teeth and a ledger. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_04",
+   "kind": "portrait",
+   "out": "portraits/officer_04.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a young scarred war-boy with white face paint and a spear. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_05",
+   "kind": "portrait",
+   "out": "portraits/officer_05.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a broad bald brute with a welded iron jaw plate. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_06",
+   "kind": "portrait",
+   "out": "portraits/officer_06.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a hooded scout woman with a crossbow and dust scarf. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_07",
+   "kind": "portrait",
+   "out": "portraits/officer_07.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a tattooed biker lieutenant with a chain and aviators. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_08",
+   "kind": "portrait",
+   "out": "portraits/officer_08.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a grizzled militia sergeant with a bushy moustache. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_09",
+   "kind": "portrait",
+   "out": "portraits/officer_09.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a cold-eyed assassin woman with a razor-wire garrote. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_10",
+   "kind": "portrait",
+   "out": "portraits/officer_10.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a fat cunning fixer in a patched pinstripe suit. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_11",
+   "kind": "portrait",
+   "out": "portraits/officer_11.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a nervous young officer with too-big armor and a pistol. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "officer_12",
+   "kind": "portrait",
+   "out": "portraits/officer_12.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a sun-scarred desert raider with a keffiyeh and goggles. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_raider",
+   "kind": "portrait",
+   "out": "portraits/enemy_raider.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a road raider in spiked scrap armor and a skull-painted face, machete raised. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_raider_f",
+   "kind": "portrait",
+   "out": "portraits/enemy_raider_f.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a female road raider with a mohawk, tire-rubber armor, sawed-off shotgun. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_raider_boss",
+   "kind": "portrait",
+   "out": "portraits/enemy_raider_boss.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a raider warchief with a car-grille chestplate and a massive sledgehammer, feathers and bones. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_slaver",
+   "kind": "portrait",
+   "out": "portraits/enemy_slaver.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a Tally slaver overseer in a black coat with brass chains, whip coiled, cruel ledger-keeper face. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_slaver_gunner",
+   "kind": "portrait",
+   "out": "portraits/enemy_slaver_gunner.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a Tally slaver soldier in a bone-white mask stamped with tally marks, long rifle, chain bandolier. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_biker",
+   "kind": "portrait",
+   "out": "portraits/enemy_biker.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a Bone Wolves biker with a wolf pelt cloak, goggles and a revving chain, blood on his teeth. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_cultist",
+   "kind": "portrait",
+   "out": "portraits/enemy_cultist.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a Glassed cultist in rags, face covered by a mask of crater glass, violet light leaking out. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_horror",
+   "kind": "portrait",
+   "out": "portraits/enemy_horror.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a maelstrom-warped human horror, twisted limbs, skin cracked with glowing violet fissures, too many teeth, screaming. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_hound",
+   "kind": "portrait",
+   "out": "portraits/enemy_hound.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a mutant rust hound, hairless scabbed wasteland dog with too many eyes and exposed ribs, snarling. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_boar",
+   "kind": "portrait",
+   "out": "portraits/enemy_boar.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a huge mutant bristleback boar with rusted rebar grown into its hide, tusks, glowing eyes. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_pirate",
+   "kind": "portrait",
+   "out": "portraits/enemy_pirate.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a Salt Kings pirate with salt-crusted leathers, rusty cutlass and a harpoon gun. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_trooper",
+   "kind": "portrait",
+   "out": "portraits/enemy_trooper.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: an Iron Wreath militia trooper in olive fatigues, gas mask and helmet, bolt rifle with bayonet. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_drone",
+   "kind": "portrait",
+   "out": "portraits/enemy_drone.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a Concord security drone robot, battered white armored shell, single cyan camera eye, weapon arms. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_gasguard",
+   "kind": "portrait",
+   "out": "portraits/enemy_gasguard.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a Gasworks guard in a fireproof suit with a flamethrower and welding mask. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_militia",
+   "kind": "portrait",
+   "out": "portraits/enemy_militia.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a Free Holds farmer militia man with a pitchfork, straw hat and scavenged hockey pads as armor. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_scav",
+   "kind": "portrait",
+   "out": "portraits/enemy_scav.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a starving wasteland scavenger in layered rags with a crowbar and a desperate stare. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_hollowed",
+   "kind": "portrait",
+   "out": "portraits/enemy_hollowed.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a hollowed one, maelstrom-emptied person with blank white eyes, grey skin, mouth sewn shut, shambling. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "enemy_burnlad",
+   "kind": "portrait",
+   "out": "portraits/enemy_burnlad.webp",
+   "aspect": "1:1",
+   "prompt": "Bust portrait, head and shoulders, three-quarter view facing the viewer, character centered and filling the frame, dark smoky background with a faint warm rust glow behind the head. Square composition. Subject: a young burnlad gang soldier, teenage, war paint of soot and ash, scrap spear and a molotov, fanatical grin. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_dam",
+   "kind": "scene",
+   "out": "scenes/scene_dam.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a colossal cracked concrete dam turned into a slaver fortress, black banners with white tally marks, cages hanging from cranes, searchlights, river below Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_junkyard",
+   "kind": "scene",
+   "out": "scenes/scene_junkyard.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a biker gang stronghold built from a mountain of wrecked cars and motorcycles, bonfires, wolf skulls on poles, dust at sunset Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_refinery",
+   "kind": "scene",
+   "out": "scenes/scene_refinery.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a working oil refinery fortress, gas flare towers burning, pipes and storage tanks, walkways, smog-orange sky at dusk Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_tanker",
+   "kind": "scene",
+   "out": "scenes/scene_tanker.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a gigantic rusted oil tanker beached on a salt shore turned into a pirate castle, shanty towers on deck, lanterns, grey sea Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_crater",
+   "kind": "scene",
+   "out": "scenes/scene_crater.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a vast glass-floored crater with a cathedral built of fused glass and scrap spires in the center, violet glowing cracks, pilgrims' torches Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_bunker",
+   "kind": "scene",
+   "out": "scenes/scene_bunker.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a fortified military hill fort, concrete bunkers, razor wire, sandbags, watchtowers with an iron wreath emblem, drab olive tents Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_farm",
+   "kind": "scene",
+   "out": "scenes/scene_farm.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a fortified farming commune, windmills and water towers, fenced green fields in a brown wasteland, palisade wall, golden hour Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_vault",
+   "kind": "scene",
+   "out": "scenes/scene_vault.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: the entrance to a pre-collapse bunker vault in a mountainside, huge round steel door, clean floodlights, radio antennas and satellite dishes Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_city",
+   "kind": "scene",
+   "out": "scenes/scene_city.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a ruined metropolis of broken skyscrapers half-swallowed by sand, a sprawling night market in the shadow of a collapsed overpass, strings of lights Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_crossroads",
+   "kind": "scene",
+   "out": "scenes/scene_crossroads.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a dusty crossroads trading post, a rusted gas station turned saloon, painted signs with no words, a hanging tree, caravans parked Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_canyon",
+   "kind": "scene",
+   "out": "scenes/scene_canyon.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a watch outpost built into red canyon walls, rope bridges, cliff dwellings, a signal fire on top Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "scene_marsh",
+   "kind": "scene",
+   "out": "scenes/scene_marsh.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a salt-marsh shanty town on stilts over brackish water, rusted boats, fishing nets, fog Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "interior_saloon",
+   "kind": "scene",
+   "out": "scenes/interior_saloon.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: the smoky interior of a wasteland saloon built inside an old bus depot, bar made of car doors, hanging bulbs, rough patrons in shadow Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "interior_market",
+   "kind": "scene",
+   "out": "scenes/interior_market.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a crowded wasteland bazaar stall piled with scavenged guns, canned food, tools and tires under patched tarps Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "interior_clinic",
+   "kind": "scene",
+   "out": "scenes/interior_clinic.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a makeshift wasteland infirmary, blood-stained operating table, jars and scavenged medical gear, a single bright lamp Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "interior_hall",
+   "kind": "scene",
+   "out": "scenes/interior_hall.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a warlord's throne hall inside a gutted factory, a throne welded from car parts on a platform, banners, braziers, armed guards in silhouette Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "interior_wall",
+   "kind": "scene",
+   "out": "scenes/interior_wall.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a wall covered in pinned notes, wanted posters, photos and bounty tokens next to a flickering lamp, no readable writing Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "interior_camp",
+   "kind": "scene",
+   "out": "scenes/interior_camp.webp",
+   "aspect": "16:9",
+   "prompt": "Wide cinematic establishing shot, 16:9 composition, strong silhouette, sense of scale, no people in the foreground. Subject: a small campfire in the ruins of a gas station at night, bedrolls, a battered car, stars and a violet psychic aurora in the sky Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_ambush",
+   "kind": "event",
+   "out": "events/event_ambush.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: raiders leaping out of an overturned bus onto a desert road, ambush, dust and gunfire Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_hounds",
+   "kind": "event",
+   "out": "events/event_hounds.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a pack of mutant rust hounds emerging from the dusk haze on a ridge Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_maelstrom",
+   "kind": "event",
+   "out": "events/event_maelstrom.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a psychic maelstrom storm over the wasteland: a vast violet-black swirling vortex in the sky, lightning, whispering shapes in the clouds Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_convoy",
+   "kind": "event",
+   "out": "events/event_convoy.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: an abandoned convoy of burnt trucks on a highway, doors open, cargo scattered, crows Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_caravan",
+   "kind": "event",
+   "out": "events/event_caravan.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a trader caravan of armored trucks and pack animals resting at an oasis, lanterns Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_slavers",
+   "kind": "event",
+   "out": "events/event_slavers.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a column of chained captives driven by masked slavers along a dusty road, black banners Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_crash",
+   "kind": "event",
+   "out": "events/event_crash.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a crashed pre-collapse aircraft half-buried in dunes, fuselage broken open Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_subway",
+   "kind": "event",
+   "out": "events/event_subway.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a flooded collapsed subway station, dark water, flickering emergency light, something moving Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_tower",
+   "kind": "event",
+   "out": "events/event_tower.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a lone rusted radio tower on a hill with a blinking red light, cables, a shack at its foot Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_prophet",
+   "kind": "event",
+   "out": "events/event_prophet.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a wandering prophet in rags preaching to nobody from atop a burnt car Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_duststorm",
+   "kind": "event",
+   "out": "events/event_duststorm.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a colossal dust storm wall rolling across the plains toward the viewer Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_oasis",
+   "kind": "event",
+   "out": "events/event_oasis.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a hidden spring under a rock overhang, green plants, clear water, animal skulls Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_burned",
+   "kind": "event",
+   "out": "events/event_burned.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a burned village, smoke rising, charred houses, a lone survivor sitting in the ashes Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_bridge",
+   "kind": "event",
+   "out": "events/event_bridge.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a toll gang holding a rusted bridge over a dry riverbed, barricades and a spiked gate Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_children",
+   "kind": "event",
+   "out": "events/event_children.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: feral scavenger children with slingshots watching from the girders of a ruined building Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_bunkerdoor",
+   "kind": "event",
+   "out": "events/event_bunkerdoor.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a sealed rusted bunker hatch in the sand with a faintly glowing keypad, a strange signal Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_aftermath",
+   "kind": "event",
+   "out": "events/event_aftermath.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a battlefield aftermath at dawn, wrecked war-rigs, smoke, crows, abandoned banners Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_wanderer",
+   "kind": "event",
+   "out": "events/event_wanderer.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a lone wanderer sitting on a milestone by the road, rifle across the knees, waiting Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_glassfield",
+   "kind": "event",
+   "out": "events/event_glassfield.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a field of green glowing glass shards shimmering under a sick sky, bones Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_hangingtree",
+   "kind": "event",
+   "out": "events/event_hangingtree.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a crossroads dead tree with a warning of hanged mannequins and bells, crows, dusk Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_ruins",
+   "kind": "event",
+   "out": "events/event_ruins.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: the inside of a collapsed shopping mall, sand dunes across the floor, light shafts, dangling signs with no letters Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "event_warband",
+   "kind": "event",
+   "out": "events/event_warband.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a warband of burnlads on war-rigs roaring past in a cloud of dust, flags and flames Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "key_title",
+   "kind": "key",
+   "out": "key/key_title.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a lone wanderer in a long coat standing on a ridge overlooking a vast burning wasteland basin where warlord armies clash; columns of smoke, a ruined city on the horizon, and a colossal violet psychic storm swirling in the sky above. Leave calm empty sky in the upper third for a title. Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "key_creation",
+   "kind": "key",
+   "out": "key/key_creation.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a figure silhouetted in the doorway of a ruined church at dawn, choosing weapons laid out on a table, dust in the light shafts Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "key_victory",
+   "kind": "key",
+   "out": "key/key_victory.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: the slaver dam fortress burning at dawn, broken chains in the foreground, freed captives walking toward the light Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "key_defeat",
+   "kind": "key",
+   "out": "key/key_defeat.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: black slaver banners with white tally marks raised over a conquered basin, lines of chained people, grey sky Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "key_death",
+   "kind": "key",
+   "out": "key/key_death.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: a lonely grave marked by rebar, a cracked helmet and goggles, on a windswept hill, embers drifting Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "key_war",
+   "kind": "key",
+   "out": "key/key_war.webp",
+   "aspect": "16:9",
+   "prompt": "Cinematic illustration, 16:9 composition. Subject: two warlord armies of war-rigs and burnlads charging at each other across a desert plain, dust and fire, dramatic Gritty post-apocalyptic graphic-novel illustration. Bold confident ink linework with rough painterly brush textures, subtle halftone grain. Desaturated palette of rust, ochre, ash grey, bruised violet shadows and bone white, with sparing hot ember-orange accents. Dramatic chiaroscuro lighting, dust and drifting embers in the air. Mad Max meets a 1980s tabletop RPG rulebook. Absolutely no text, no letters, no numbers, no logos, no watermark, no border, no frame."
+  },
+  {
+   "id": "worldmap",
+   "kind": "map",
+   "out": "map/worldmap.webp",
+   "aspect": "16:10",
+   "prompt": "Using the attached layout sketch as an exact guide for geography, paint a finished top-down illustrated fantasy-style campaign map of a post-apocalyptic wasteland basin. Keep every region, the coastline, the river and each settlement dot in exactly the same position as in the sketch. Blue in the sketch = a dead grey-green sea to the east with rusted wrecks; brown triangles = jagged western mountains; the purple circle = a huge glowing glass crater; the grey blob = a ruined city of broken skyscrapers; green = patchy farmland in the south; red-brown = cracked badlands in the south-east; the thin blue line = a dry-ish river; black dots = settlements, each drawn as a tiny illustrated landmark (walls, towers, tanks, windmills). Ochre dust plains between. Hand-painted, aged vellum and ink with rust stains and burn marks at the edges, subtle. Top-down view. Absolutely no text, no labels, no letters, no compass words, no legend, no border frame."
+  },
+  {
+   "id": "tex_ground_dust",
+   "kind": "texture",
+   "out": "textures/ground_dust.webp",
+   "aspect": "1:1",
+   "prompt": "Seamless tileable top-down texture, flat even lighting, orthographic view straight down, of cracked dry desert earth with small pebbles. Painterly game art texture, desaturated, no objects casting long shadows, no text."
+  },
+  {
+   "id": "tex_ground_ash",
+   "kind": "texture",
+   "out": "textures/ground_ash.webp",
+   "aspect": "1:1",
+   "prompt": "Seamless tileable top-down texture, flat even lighting, orthographic view straight down, of burnt ashen ground with charcoal, cinders and grey ash. Painterly game art texture, desaturated, no objects casting long shadows, no text."
+  },
+  {
+   "id": "tex_ground_salt",
+   "kind": "texture",
+   "out": "textures/ground_salt.webp",
+   "aspect": "1:1",
+   "prompt": "Seamless tileable top-down texture, flat even lighting, orthographic view straight down, of white salt flat crust with cracks and brackish stains. Painterly game art texture, desaturated, no objects casting long shadows, no text."
+  },
+  {
+   "id": "tex_ground_rubble",
+   "kind": "texture",
+   "out": "textures/ground_rubble.webp",
+   "aspect": "1:1",
+   "prompt": "Seamless tileable top-down texture, flat even lighting, orthographic view straight down, of broken concrete and asphalt rubble with weeds in the cracks. Painterly game art texture, desaturated, no objects casting long shadows, no text."
+  },
+  {
+   "id": "tex_ground_glass",
+   "kind": "texture",
+   "out": "textures/ground_glass.webp",
+   "aspect": "1:1",
+   "prompt": "Seamless tileable top-down texture, flat even lighting, orthographic view straight down, of fused green-violet glass sand, faintly glowing cracks. Painterly game art texture, desaturated, no objects casting long shadows, no text."
+  },
+  {
+   "id": "tex_ground_mud",
+   "kind": "texture",
+   "out": "textures/ground_mud.webp",
+   "aspect": "1:1",
+   "prompt": "Seamless tileable top-down texture, flat even lighting, orthographic view straight down, of wet dark marsh mud with puddles and dead reeds. Painterly game art texture, desaturated, no objects casting long shadows, no text."
+  },
+  {
+   "id": "tex_paper",
+   "kind": "texture",
+   "out": "textures/paper.webp",
+   "aspect": "1:1",
+   "prompt": "Seamless tileable texture of old stained yellowed paper with coffee rings, creases and faint rust spots, flat lighting, no text."
+  },
+  {
+   "id": "tex_metal",
+   "kind": "texture",
+   "out": "textures/metal.webp",
+   "aspect": "1:1",
+   "prompt": "Seamless tileable texture of dark rusted scratched sheet metal with rivets, flat lighting, no text."
+  },
+  {
+   "id": "prop_car",
+   "kind": "prop",
+   "out": "props/car.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a rusted burnt-out car wreck, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  },
+  {
+   "id": "prop_barrels",
+   "kind": "prop",
+   "out": "props/barrels.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a cluster of three rusty oil barrels, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  },
+  {
+   "id": "prop_barrier",
+   "kind": "prop",
+   "out": "props/barrier.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a cracked concrete jersey barrier, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  },
+  {
+   "id": "prop_scrap",
+   "kind": "prop",
+   "out": "props/scrap.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a pile of scrap metal and tires, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  },
+  {
+   "id": "prop_tree",
+   "kind": "prop",
+   "out": "props/tree.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a dead leafless tree with twisted branches, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  },
+  {
+   "id": "prop_bus",
+   "kind": "prop",
+   "out": "props/bus.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a burnt-out school bus wreck, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  },
+  {
+   "id": "prop_sandbags",
+   "kind": "prop",
+   "out": "props/sandbags.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a curved wall of sandbags, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  },
+  {
+   "id": "prop_tires",
+   "kind": "prop",
+   "out": "props/tires.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a stack of old tires, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  },
+  {
+   "id": "prop_crates",
+   "kind": "prop",
+   "out": "props/crates.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a pile of wooden crates and ammo boxes, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  },
+  {
+   "id": "prop_rocks",
+   "kind": "prop",
+   "out": "props/rocks.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a cluster of jagged boulders, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  },
+  {
+   "id": "prop_wall",
+   "kind": "prop",
+   "out": "props/wall.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a broken section of brick wall, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  },
+  {
+   "id": "prop_glass",
+   "kind": "prop",
+   "out": "props/glass.png",
+   "aspect": "1:1",
+   "prompt": "Game sprite, top-down view seen from directly above (orthographic, slightly angled), of a cluster of glowing violet crystal glass spikes, painterly post-apocalyptic game art, centered, the object fills about 80% of the frame, on a perfectly flat solid pure magenta (#FF00FF) background, no shadow on the background, no text."
+  }
+ ]
+}
