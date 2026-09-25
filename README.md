@@ -22,6 +22,17 @@ npm run build      # outputs dist/ — host it anywhere (it uses relative paths)
 npm run preview
 ```
 
+Requires **Node.js 20.19+ or 22.12+** (check with `node -v`).
+
+**Troubleshooting — "Cannot find native binding" / `@rolldown/binding-…`:** npm occasionally skips the platform-specific build binary ([npm bug #4828](https://github.com/npm/cli/issues/4828)). Reinstall cleanly:
+
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+If it still fails on an Apple Silicon Mac, make sure Node itself is the arm64 build (`node -p process.arch` should print `arm64`, not `x64` running under Rosetta), and that npm isn't configured to skip optional packages (`npm config get omit` should not list `optional`).
+
 A GitHub Actions workflow (`.github/workflows/deploy.yml`) builds and publishes the game to GitHub Pages on every push to `main`. Enable it once under **Settings → Pages → Source: GitHub Actions**.
 
 The game is designed for a desktop browser at 16:9 (it scales to any window size). Sound on, fullscreen (F11) recommended. Progress is saved in your browser (autosave plus three manual slots).
