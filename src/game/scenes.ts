@@ -9,6 +9,7 @@ import { PLAYBOOKS } from '../data/playbooks';
 import { adjustRelation } from './sim';
 import { effStat, grantXp, maxHp } from './characters';
 import type { Character, GameState } from './types';
+import type { ArmyBattlePlan } from './war';
 import { factionShort, rngOf } from './util';
 
 export interface FightSpec {
@@ -21,6 +22,7 @@ export interface SceneResult {
   text: string;
   effects?: string[];
   fight?: FightSpec;
+  army?: ArmyBattlePlan;
   next?: Scene;
   image?: string;
 }

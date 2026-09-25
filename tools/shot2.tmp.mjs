@@ -1,0 +1,27 @@
+import { chromium } from 'playwright';
+const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' });
+const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
+const errors = [];
+page.on('pageerror', (e) => errors.push('PAGEERROR ' + e.message + '\n' + e.stack));
+page.on('console', (m) => { if (m.type() === 'error') errors.push('CONSOLE ' + m.text()); });
+await page.goto('http://localhost:4173/');
+await page.waitForTimeout(1500);
+await page.mouse.click(960, 540);
+await page.waitForTimeout(1200);
+await page.getByText('New Game').click();
+await page.waitForTimeout(800);
+await page.getByText('Walk Into the Burnlands').click();
+await page.waitForTimeout(800);
+await page.getByText('Skip').click();
+await page.waitForTimeout(1200);
+await page.getByText('Draw your weapon').click();
+await page.waitForTimeout(800);
+await page.getByText('To Battle!').click();
+await page.waitForTimeout(3000);
+await page.screenshot({ path: '/tmp/claude-0/shots/06_battle.png' });
+// hover over an enemy to see the preview
+await page.mouse.move(1500, 500);
+await page.waitForTimeout(500);
+await page.screenshot({ path: '/tmp/claude-0/shots/07_battle_hover.png' });
+console.log(errors.join('\n'));
+await browser.close();

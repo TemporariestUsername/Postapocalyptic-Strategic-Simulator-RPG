@@ -3,6 +3,7 @@ import { FACTIONS, FACTION_IDS } from '../data/factions';
 import { REGIONS } from '../data/regions';
 import { makeCharacter, portraitsFor, randomRecruit } from './characters';
 import type { FactionState, GameState, RegionState } from './types';
+import { generateJobs } from './jobs';
 
 export const SAVE_VERSION = 1;
 
@@ -88,6 +89,7 @@ export function newGame(opts: NewGameOptions): GameState {
   };
   for (const pid of used) s.flags[`used:${pid}`] = true;
   refreshRecruits(s, rng);
+  generateJobs(s);
   s.news.push({ day: 0, text: 'The Burnt King\'s Burnlads have been seen raiding south of Ashfall.', kind: 'burn', faction: 'cinder' });
   return s;
 }
