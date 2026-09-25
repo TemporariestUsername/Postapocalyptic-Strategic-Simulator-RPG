@@ -4,7 +4,7 @@ import {
 } from '../game/scenes';
 import type { GameState } from '../game/types';
 import { REGION_BY_ID } from './regions';
-import { enemyTypesOf, factionName, rngOf } from '../game/util';
+import { bareName, enemyTypesOf, factionName, rngOf } from '../game/util';
 import { randomRecruit } from '../game/characters';
 import { usedPortraits } from '../game/state';
 
@@ -316,7 +316,7 @@ export function patrolScene(s: GameState, faction: string, region: string): Scen
   const t = tierFor(s);
   return {
     id: 'patrol', title: `${factionName(s, faction)} Patrol`, image: 'events/army',
-    text: `A ${factionName(s, faction)} patrol blocks the road. Their leader recognizes you. "That's the one. The one with the price on their head."`,
+    text: `A ${bareName(s, faction)} patrol blocks the road. Their leader recognizes you. "That's the one. The one with the price on their head."`,
     choices: [
       { label: 'Fight your way through', resolve: () => ({ text: 'Weapons out.', fight: { enemies: [types[0], types[1], types[2], types[0]].map((id) => ({ id, tier: t })), battlemap: bm(region), context: { type: 'patrol', canFlee: true, title: 'Patrol' } } }) },
       { label: 'Bribe them (40 barter)', cost: { barter: 40 }, resolve: () => ({ text: 'Barter talks. They look the other way.', effects: [fxBarter(s, -40)] }) },

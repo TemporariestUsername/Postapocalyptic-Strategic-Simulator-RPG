@@ -90,8 +90,10 @@ export function tapeScene(s: GameState, fid: string): Scene {
     choices: [
       { label: 'Make the case for war against the King', stat: 'hot', bonus: f.rep >= 40 ? 2 : f.rep >= 15 ? 1 : f.rep < -10 ? -1 : 0, hint: f.rep >= 15 ? 'Good reputation helps' : f.rep < -10 ? 'Poor reputation hurts' : undefined,
         resolve: (_s, r) => {
+          s.flags[`tape:${fid}`] = s.day;
+          if (r!.outcome === 'miss') return { text: `"A trick. Some Choir madness on a tape." ${def.leader} waves you away. "Come back when you have proof I can hold in my hand."`, effects: [fxRep(s, fid, -5), 'You may try again in a month'] };
+          if (r!.outcome === 'weak' && f.rep < 20) return { text: `${def.leader} is shaken, but not moved. "Words on a tape. Why should I bleed my people on the word of a drifter? Prove you're worth trusting — then we'll talk war."`, effects: ['Needs 20 reputation on a weak hit', 'You may try again in a month'] };
           f.heardTape = true;
-          if (r!.outcome === 'miss') return { text: `"A trick. Some Choir madness on a tape." ${def.leader} waves you away. "Come back when you have proof I can hold in my hand."`, effects: [fxRep(s, fid, -5)] };
           f.coalition = true;
           s.quest.coalition++;
           adjustRelation(s, fid, 'cinder', -100);

@@ -14,6 +14,7 @@ import { endPlayerTurn } from '../../combat/turn';
 import type { Unit } from '../../combat/types';
 import { applyBattle } from '../../game/outcome';
 import { Btn, HpBar, Token, useTip } from '../components/common';
+import { Hint } from '../components/Hint';
 import { itemLine } from '../itemInfo';
 import { G, emit, finishBattle, game, useStore } from '../store';
 
@@ -267,6 +268,7 @@ export function BattleScreen() {
           </div>
         </div>
       </div>
+      {!showResult && <Hint id={b.mode === 'army' ? 'army' : 'battle'} />}
       {showResult && <ResultOverlay />}
     </div>
   );
@@ -366,7 +368,7 @@ function ResultOverlay() {
   useEffect(() => {
     audio.sfx(sum.result === 'win' ? 'levelup' : 'ui_error');
   }, []);
-  const title = sum.result === 'win' ? 'Victory' : sum.result === 'fled' ? 'Retreat' : 'Defeat';
+  const title = sum.result === 'win' ? 'Victory' : b.context.type === 'tutorial' ? 'Close Call' : sum.result === 'fled' ? 'Retreat' : 'Defeat';
   return (
     <div class="modal-back" style={{ zIndex: 200 }}>
       <div class="panel rise" style={{ width: 900, padding: '34px 44px', textAlign: 'center' }}>

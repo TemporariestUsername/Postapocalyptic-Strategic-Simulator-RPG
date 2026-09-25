@@ -55,14 +55,26 @@ export function applyBattle(s: GameState, b: Battle, items: Record<string, numbe
       lines.push(`${c.name} was dragged off the field, barely alive.`);
     } else c.hp = Math.min(maxHp(c), Math.max(1, u.hp));
   }
-  const pcDied = deaths.includes(s.crew[0].name);
-  if (pcDied) {
-    s.ended = 'death';
-    return { result, lines, xp: 0, levelUps, deaths, next: 'death' };
+  const pc = s.crew[0];
+  if (deaths.includes(pc.name)) {
+    // Only the Burnt difficulty (and the final duel) is truly permadeath for your own character.
+    if ((s.difficulty === 'hard' || ctx.type === 'boss') && ctx.type !== 'tutorial') {
+      s.ended = 'death';
+      s.flags.deathCause = ctx.title;
+      return { result, lines, xp: 0, levelUps, deaths, next: 'death' };
+    }
+    deaths.splice(deaths.indexOf(pc.name), 1);
+    pc.hp = 1;
+    lines.push(`${pc.name} was left for dead — and crawled back out of the grave.`);
   }
   s.crew = s.crew.filter((c) => !deaths.includes(c.name));
   for (const d of deaths) news(s, `${d} fell in battle and was buried by the road.`, 'player');
 
+  if (ctx.type === 'tutorial' && result !== 'win') {
+    for (const c of s.crew) c.hp = Math.max(c.hp, 3);
+    lines.push('Old Nell\'s shotgun roars from the wall and the last raiders flee.');
+    return { result, lines, xp: 20, levelUps, deaths, next: 'afterRaid' };
+  }
   if (result === 'lose') {
     // the crew is beaten but survives, robbed and battered
     for (const c of s.crew) c.hp = Math.max(1, Math.round(maxHp(c) * 0.25));
@@ -71,6 +83,7 @@ export function applyBattle(s: GameState, b: Battle, items: Record<string, numbe
     lines.push(`Beaten and left for dead, you crawl away. You lost ${lost} barter.`);
     if (ctx.type === 'boss') {
       s.ended = 'death';
+      s.flags.deathCause = ctx.title;
       return { result, lines, xp: 0, levelUps, deaths, next: 'death' };
     }
     if (ctx.type === 'delve') s.delve = null;

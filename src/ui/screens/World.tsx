@@ -11,9 +11,10 @@ import type { GameState } from '../../game/types';
 import { factionColor, factionName, fmtDate, playerSide, regionName } from '../../game/util';
 import { Btn, useTip } from '../components/common';
 import { CrewStrip, Hud } from '../components/Hud';
+import { Hint } from '../components/Hint';
 import { regionPaths } from '../mapgeo';
 import {
-  G, emit, enterDelve, enterSettlement, game, openScene, regionHasSettlement, rest, resumeTravel, select, startArmy, stopTravel, toast, travelTo, useStore,
+  G, emit, enterDelve, setArriveHandler, enterSettlement, game, openScene, regionHasSettlement, rest, resumeTravel, select, startArmy, stopTravel, toast, travelTo, useStore,
 } from '../store';
 
 const KIND_LABEL = { capital: 'Capital', hold: 'Hold', outpost: 'Outpost', ruins: 'Ruins' } as const;
@@ -49,6 +50,8 @@ export function focusRegion(id: string) {
   if (sy < 170) view.ty += 260 - sy;
   clampView();
 }
+
+setArriveHandler((id) => focusRegion(id));
 
 export function WorldScreen() {
   const { game: s, ui } = useStore();
@@ -160,7 +163,7 @@ export function WorldScreen() {
         {/* region markers */}
         {REGIONS.map((r) => <RegionMarker key={r.id} s={s} id={r.id} hovered={hover === r.id} selected={sel === r.id} onHover={setHover} onPick={pick} />)}
         {/* player */}
-        <g transform={`translate(${px},${py - 70 * markerScale()}) scale(${markerScale()})`} filter="url(#shadow)" pointer-events="none">
+        <g style={{ transform: `translate(${px}px, ${py - 70 * markerScale()}px) scale(${markerScale()})`, transition: ui.traveling ? 'transform 0.26s linear' : 'transform 0.4s ease-out' }} filter="url(#shadow)" pointer-events="none">
           <circle r="54" fill="none" stroke="#ff7a2f" stroke-width="4" style={{ animation: 'pulse 1.4s infinite' }} filter="url(#glow)" />
           <circle r="47" fill="#000" stroke="#ffb35c" stroke-width="5" />
           <image href={token(s.crew[0].portrait)} x="-44" y="-44" width="88" height="88" clip-path="url(#tokenClip)" />
@@ -172,6 +175,7 @@ export function WorldScreen() {
       {sel && <RegionPanel />}
       <NewsTicker />
       <CrewStrip />
+      {!ui.scene && <Hint id="world" />}
       {(ui.traveling || s.travel) && <TravelBar />}
       {ui.resting > 0 && <div class="panel" style={{ position: 'absolute', left: '50%', top: 110, transform: 'translateX(-50%)', padding: '12px 30px', zIndex: 45 }}><span class="display">Resting… {ui.resting} days left</span></div>}
     </div>
@@ -362,7 +366,7 @@ function KilnActions() {
       <Btn variant="danger" block disabled={force < 30} tip={<><b>Storm the Kiln</b><br />Your warband ({s.warband}) plus coalition fighters ({plan.allied}) against {s.regions.kiln.garrison} defenders. Needs at least 30.</>}
         onClick={() => openScene({
           id: 'storm', title: 'Storm the Kiln', image: 'events/army',
-          text: `${force} fighters stand ready beneath the smoking towers: your warband and ${plan.allied ? 'coalition war-bands' : 'no allies at all'}. Behind the walls wait ${s.regions.kiln.garrison} Burnlads and the Burnt King himself. There will be no retreat once the gates are breached.`,
+          text: `${force} fighters stand ready beneath the smoking towers: your warband and ${plan.allied ? 'coalition war-bands' : 'no allies at all'}. Behind the walls wait ${s.regions.kiln.garrison} Burnlads and the Burnt King himself. There will be no retreat once the gates are breached — and the Burnt King himself waits inside. (A seasoned crew, level 5 or higher, is strongly advised.)`,
           choices: [
             { label: 'Sound the charge', resolve: () => ({ text: 'War horns echo off the cooling towers.', army: plan }) },
             { label: 'Not yet', resolve: () => ({ text: '' }) },

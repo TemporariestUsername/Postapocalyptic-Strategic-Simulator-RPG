@@ -67,7 +67,7 @@ export function unitFromEnemy(defId: string, tier: number, id: string): Unit {
   const hp = d.hp + tier * 2 + (d.boss ? tier * 4 : 0);
   return {
     id, name: d.name, team: 1, controlled: false, portrait: d.portrait, x: 0, y: 0, hp, maxHp: hp,
-    armor: d.armor + (tier >= 3 ? 1 : 0), move: d.move, stats, weapon: d.weapon, abilities: [...(d.abilities ?? [])],
+    armor: d.armor, move: d.move, stats, weapon: d.weapon, abilities: [...(d.abilities ?? [])],
     cooldowns: {}, status: {}, ai: d.ai, enemyId: defId, boss: d.boss, moved: false, acted: false,
     hitBonus: 0, healBonus: 0, hardHarm: 0, evasive: false, xp: Math.round(d.xp * (1 + tier * 0.25)), loot: Math.round(d.loot * (1 + tier * 0.3)),
   };

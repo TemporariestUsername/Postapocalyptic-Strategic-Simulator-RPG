@@ -146,7 +146,7 @@ export function advanceDay(s: GameState, resting = false): DayResult {
       if (owner !== 'free' && owner !== PLAYER_FACTION_ID && s.factions[owner] && s.factions[owner].rep <= -40 && rng.chance(0.3)) {
         s.pending.push({ kind: 'patrol', faction: owner, region: dest });
         res.stop = true;
-      } else if (rng.chance(danger * 0.45) && s.day > 3) {
+      } else if (rng.chance(danger * 0.36) && s.day > 3) {
         const pool = ENCOUNTERS.filter((e) => !e.when || e.when(s, dest));
         const e = rng.weighted(pool, (x) => x.weight);
         s.pending.push({ kind: 'encounter', eventId: e.id, region: dest });

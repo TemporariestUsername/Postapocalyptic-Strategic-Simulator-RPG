@@ -7,6 +7,7 @@ import type { Roll } from '../engine/dice';
 import { audio } from '../engine/audio';
 import { saveGame, type Slot } from '../engine/save';
 import { createSkirmish } from '../combat/setup';
+import { autoPlay } from '../combat/turn';
 import type { Battle } from '../combat/types';
 import { encounterScene, patrolScene } from '../data/encounters';
 import { storyScene } from '../data/story';
@@ -373,6 +374,7 @@ export function finishBattle(): void {
       return;
     case 'final':
       goto('world');
+      autosave();
       openScene(storyScene(s, 'final')!);
       return;
     case 'founded':
@@ -412,6 +414,7 @@ export function delveNext(): void {
   }
   if (room.type === 'fight' || room.type === 'boss') {
     if (room.type === 'boss' && d.id === 'kiln') {
+      autosave();
       openScene(storyScene(s, 'final')!);
       return;
     }
@@ -456,6 +459,8 @@ export function leaveDelve(): void {
 // ------------------------------------------------------------------------------ travel & time
 
 let travelTimer = 0;
+let onArrive: ((id: string) => void) | null = null;
+export function setArriveHandler(f: (id: string) => void) { onArrive = f; }
 
 export function travelTo(dest: string): void {
   const s = game();
@@ -482,6 +487,7 @@ function tick(): void {
   if (s.day % 2 === 0) audio.sfx('step', { vol: 0.35 });
   if (r.arrived) {
     G.ui.selected = s.location;
+    onArrive?.(s.location);
     toast(`Arrived at ${regionName(s.location)}`);
     audio.sfx('door', { vol: 0.5 });
     autosave();
@@ -550,4 +556,7 @@ export function regionHasSettlement(id: string): boolean {
 
 // Debug/automation handle (used by the Playwright playtest scripts).
 (window as unknown as Record<string, unknown>).__G = G;
-(window as unknown as Record<string, unknown>).__api = { goto, emit, flow, openPanel, setTab, travelTo, select, startSkirmish, startArmy, enterDelve, finishBattle };
+(window as unknown as Record<string, unknown>).__api = {
+  goto, emit, flow, openPanel, setTab, travelTo, select, startSkirmish, startArmy, enterDelve, finishBattle, continueScene, enterSettlement,
+  autoBattle: () => { if (G.ui.battle) { autoPlay(G.ui.battle.battle, 40); if (!G.ui.battle.battle.result) G.ui.battle.battle.result = 'fled'; emit(); } },
+};

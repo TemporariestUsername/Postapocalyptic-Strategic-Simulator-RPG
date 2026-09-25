@@ -5,7 +5,7 @@ import type { Scene } from './scenes';
 import { fxBarter, fxItem, fxRep, fxXp, tierFor } from './scenes';
 import { adjustRelation, atWar } from './sim';
 import type { GameState, Job, JobKind } from './types';
-import { enemyTypesOf, factionName, news, nextId, regionName, regionsOf, rngOf } from './util';
+import { bareName, enemyTypesOf, factionName, news, nextId, regionName, regionsOf, rngOf } from './util';
 import { DELVES } from './delve';
 
 export const MAX_ACTIVE_JOBS = 3;
@@ -56,12 +56,12 @@ function makeJob(s: GameState, fid: string, kind: JobKind, own: string[], enemie
     case 'sabotage': {
       const target = rng.pick(enemies);
       const enemy = s.regions[target].owner;
-      return { ...base, target, enemy, title: `Sabotage ${regionName(target)}`, desc: `Cripple the ${factionName(s, enemy)} garrison at ${regionName(target)}: spike their fuel, burn their stores, cut their wire.`, reward: pay(55, 80), rep: 12, merit: 14 };
+      return { ...base, target, enemy, title: `Sabotage ${regionName(target)}`, desc: `Cripple the ${bareName(s, enemy)} garrison at ${regionName(target)}: spike their fuel, burn their stores, cut their wire.`, reward: pay(55, 80), rep: 12, merit: 14 };
     }
     case 'raid': {
       const target = rng.pick(enemies);
       const enemy = s.regions[target].owner;
-      return { ...base, target, enemy, title: `Raid the ${factionName(s, enemy)} Supply Line`, desc: `A ${factionName(s, enemy)} supply column is moving through ${regionName(target)}. Hit it and take what you can carry.`, reward: pay(45, 70), rep: 10, merit: 12 };
+      return { ...base, target, enemy, title: `Raid the ${bareName(s, enemy)} Supply Line`, desc: `A ${bareName(s, enemy)} supply column is moving through ${regionName(target)}. Hit it and take what you can carry.`, reward: pay(45, 70), rep: 10, merit: 12 };
     }
     case 'scout': {
       const target = rng.pick(enemies);
@@ -71,7 +71,7 @@ function makeJob(s: GameState, fid: string, kind: JobKind, own: string[], enemie
     case 'assassinate': {
       const target = rng.pick(enemies);
       const enemy = s.regions[target].owner;
-      return { ...base, target, enemy, title: `Kill the Commander at ${regionName(target)}`, desc: `A ${factionName(s, enemy)} war-chief commands at ${regionName(target)}. ${leader} wants their head in a sack.`, reward: pay(110, 160), rep: 18, merit: 25 };
+      return { ...base, target, enemy, title: `Kill the Commander at ${regionName(target)}`, desc: `A ${bareName(s, enemy)} war-chief commands at ${regionName(target)}. ${leader} wants their head in a sack.`, reward: pay(110, 160), rep: 18, merit: 25 };
     }
     case 'envoy': {
       const others = FACTION_IDS.filter((f) => f !== fid && f !== 'cinder' && s.factions[f].alive && (s.factions[fid].relations[f] ?? 0) < 20);
@@ -148,7 +148,7 @@ export function completeJob(s: GameState, j: Job): string[] {
     case 'assassinate':
       t.garrison = Math.round(t.garrison * 0.75);
       if (j.enemy) fx.push(fxRep(s, j.enemy, -20));
-      news(s, `A ${factionName(s, j.enemy ?? '')} war-chief is found dead at ${regionName(j.target)}.`, 'player', { region: j.target });
+      news(s, `A ${bareName(s, j.enemy ?? '')} war-chief is found dead at ${regionName(j.target)}.`, 'player', { region: j.target });
       break;
     case 'envoy':
       if (j.envoyTo) {

@@ -2,6 +2,7 @@ import { img } from '../../engine/assets';
 import { DELVES } from '../../game/delve';
 import { Btn } from '../components/common';
 import { CrewStrip, Hud } from '../components/Hud';
+import { Hint } from '../components/Hint';
 import { delveNext, leaveDelve, useStore } from '../store';
 
 const ROOM_INFO = {
@@ -58,6 +59,7 @@ export function DelveScreen() {
         </div>
       </div>
       <CrewStrip />
+      <Hint id="delve" />
     </div>
   );
 }

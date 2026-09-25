@@ -55,6 +55,11 @@ export function factionName(s: GameState, id: string): string {
   return FACTIONS[id]?.name ?? id;
 }
 
+/** Faction name without a leading article, for use mid-sentence ("the Cinder Throne"). */
+export function bareName(s: GameState, id: string): string {
+  return factionName(s, id).replace(/^The /, '');
+}
+
 export function factionShort(s: GameState, id: string): string {
   if (id === PLAYER_FACTION_ID) return s.playerFaction?.name ?? 'You';
   if (id === 'free') return INDEPENDENT.short;

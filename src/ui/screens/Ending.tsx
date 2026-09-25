@@ -1,7 +1,6 @@
 import { useEffect } from 'preact/hooks';
 import { audio } from '../../engine/audio';
 import { img } from '../../engine/assets';
-import { deleteSave } from '../../engine/save';
 import { Btn, Embers } from '../components/common';
 import { regionsOf, fmtDate } from '../../game/util';
 import { G, goto, useStore } from '../store';
@@ -14,7 +13,6 @@ export function EndingScreen() {
   const warlord = !!s.playerFaction;
   useEffect(() => {
     audio.music(kind === 'victory' ? 'victory' : 'defeat');
-    if (kind !== 'victory') deleteSave('auto');
   }, []);
   const image = kind === 'victory' ? (warlord ? 'story/warlord_end' : 'story/victory') : kind === 'death' ? 'story/death' : 'story/defeat';
   const title = kind === 'victory' ? 'The Fires Go Out' : kind === 'death' ? 'Buried by the Road' : 'The Great Burn';

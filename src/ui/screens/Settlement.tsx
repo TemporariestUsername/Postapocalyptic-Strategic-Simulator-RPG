@@ -18,6 +18,7 @@ import type { GameState, Job } from '../../game/types';
 import { factionColor, factionName, regionName } from '../../game/util';
 import { Btn, HpBar, Icon, Portrait, Token, useTip } from '../components/common';
 import { CrewStrip, Hud } from '../components/Hud';
+import { Hint } from '../components/Hint';
 import { ItemTip, itemLine } from '../itemInfo';
 import { G, emit, game, goto, openScene, setTab, toast, useStore } from '../store';
 import { audio } from '../../engine/audio';
@@ -69,6 +70,7 @@ export function SettlementScreen() {
         </div>
       )}
       <CrewStrip />
+      {!ui.scene && <Hint id="settlement" />}
     </div>
   );
 }
@@ -300,10 +302,16 @@ function Hall() {
               </Btn>
             ) : null
           )}
-          {s.quest.tape && !f.heardTape && fid !== 'cinder' && !hostile && (
-            <Btn variant="psy" onClick={() => openScene(tapeScene(s, fid))} tip="Play the Burnt King's own words and try to bring this warlord into the coalition.">Play the Tower Tape</Btn>
-          )}
-          {f.heardTape && !f.coalition && <div class="small dim">{def.leader} heard the tape and refused. Their mind may change if your reputation grows — or if the Burnt King marches on them.</div>}
+          {s.quest.tape && !f.coalition && fid !== 'cinder' && !hostile && (() => {
+            const last = s.flags[`tape:${fid}`] as number | undefined;
+            const wait = last !== undefined ? last + 30 - s.day : 0;
+            return (
+              <Btn variant="psy" disabled={wait > 0} onClick={() => openScene(tapeScene(s, fid))}
+                tip={<><b>Play the Tower Tape</b><br />Roll Hot to bring {def.leader} into the coalition against the Burnt King. A strong hit always works; a weak hit needs 20+ reputation.{wait > 0 && <><br /><span class="bad">{def.leader} won't hear it again for {wait} days.</span></>}</>}>
+                Play the Tower Tape{wait > 0 ? ` (${wait}d)` : ''}
+              </Btn>
+            );
+          })()}
           <div class="divider" />
           <div class="label">Work for {def.leader}</div>
           {hostile ? <div class="small bad">{def.leader} will not give you work.</div> : jobs.length ? jobs.map((j) => <JobCard key={j.id} j={j} />) : <div class="small dim">No work at the moment.</div>}
