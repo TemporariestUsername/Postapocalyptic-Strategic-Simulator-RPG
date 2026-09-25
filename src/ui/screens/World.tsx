@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import { img, token } from '../../engine/assets';
+import { img, sigil, TOKEN_CROP } from '../../engine/assets';
 import { FACTIONS, PLAYER_FACTION_ID } from '../../data/factions';
 import { ADJACENCY, MAP_H, MAP_W, NEIGHBORS, REGIONS, REGION_BY_ID } from '../../data/regions';
 import { findPath, pathDays, rationsPerDay } from '../../game/actions';
@@ -9,13 +9,19 @@ import { atWar } from '../../game/sim';
 import { attackTargets, availableGarrison, canCommand, garrisonTransfer, kilnAssaultPlan, muster, orderAttack, seizePlan } from '../../game/war';
 import type { GameState } from '../../game/types';
 import { factionColor, factionName, fmtDate, playerSide, regionName } from '../../game/util';
-import { Btn, useTip } from '../components/common';
+import { Btn, Token, useTip } from '../components/common';
 import { CrewStrip, Hud } from '../components/Hud';
 import { Hint } from '../components/Hint';
 import { regionPaths } from '../mapgeo';
 import {
   G, emit, enterDelve, setArriveHandler, enterSettlement, game, openScene, regionHasSettlement, rest, resumeTravel, select, startArmy, stopTravel, toast, travelTo, useStore,
 } from '../store';
+
+/** A portrait face-crop drawn inside an SVG circle of radius r (clip path must be defined in <defs>). */
+function FaceImage({ src, r, clip }: { src: string; r: number; clip: string }) {
+  const size = (r * 2) / TOKEN_CROP.s;
+  return <image href={img(src)} x={-r - size * TOKEN_CROP.x} y={-r - size * TOKEN_CROP.y} width={size} height={size} clip-path={`url(#${clip})`} />;
+}
 
 const KIND_LABEL = { capital: 'Capital', hold: 'Hold', outpost: 'Outpost', ruins: 'Ruins' } as const;
 
@@ -153,7 +159,7 @@ export function WorldScreen() {
               <g transform={`translate(${B.x},${B.y}) rotate(${ang})`}><path d="M-44,-18 L-18,0 L-44,18 Z" fill={col} stroke="#000" stroke-width="3" /></g>
               <g transform={`translate(${x},${y}) scale(${markerScale()})`}>
                 <circle r="34" fill="#140e0a" stroke={col} stroke-width="6" />
-                <image href={img('abilities/charge')} x="-24" y="-24" width="48" height="48" />
+                <image href={sigil(a.faction) ?? img('abilities/charge')} x="-28" y="-28" width="56" height="56" />
                 <rect x="-38" y="30" width="76" height="30" rx="4" fill="#000" stroke={col} stroke-width="2" />
                 <text y="52" text-anchor="middle" fill="#fff" font-family="Barlow Condensed" font-weight="700" font-size="24">{a.troops}</text>
               </g>
@@ -166,7 +172,7 @@ export function WorldScreen() {
         <g style={{ transform: `translate(${px}px, ${py - 70 * markerScale()}px) scale(${markerScale()})`, transition: ui.traveling ? 'transform 0.26s linear' : 'transform 0.4s ease-out' }} filter="url(#shadow)" pointer-events="none">
           <circle r="54" fill="none" stroke="#ff7a2f" stroke-width="4" style={{ animation: 'pulse 1.4s infinite' }} filter="url(#glow)" />
           <circle r="47" fill="#000" stroke="#ffb35c" stroke-width="5" />
-          <image href={token(s.crew[0].portrait)} x="-44" y="-44" width="88" height="88" clip-path="url(#tokenClip)" />
+          <FaceImage src={s.crew[0].portrait} r={44} clip="tokenClip" />
           <path d="M-14,50 L0,70 L14,50 Z" fill="#ffb35c" />
         </g>
         </g>
@@ -199,12 +205,14 @@ function RegionMarker({ s, id, hovered, selected, onHover, onPick }: { s: GameSt
       {lead ? (
         <>
           <circle r="40" fill="#0d0907" stroke={col} stroke-width="7" />
-          <image href={token(FACTIONS[st.owner].portrait)} x="-30" y="-30" width="60" height="60" clip-path="url(#leaderClip)" />
+          <FaceImage src={FACTIONS[st.owner].portrait} r={30} clip="leaderClip" />
         </>
       ) : (
         <>
           <circle r={isCap ? 38 : 30} fill="#0d0907" stroke={col} stroke-width="6" />
-          <image href={img(icon)} x={isCap ? -26 : -21} y={isCap ? -26 : -21} width={isCap ? 52 : 42} height={isCap ? 52 : 42} style={{ opacity: 0.95 }} />
+          {sigil(st.owner) && r.kind !== 'ruins'
+            ? <image href={sigil(st.owner)!} x={isCap ? -30 : -25} y={isCap ? -30 : -25} width={isCap ? 60 : 50} height={isCap ? 60 : 50} />
+            : <image href={img(icon)} x={isCap ? -26 : -21} y={isCap ? -26 : -21} width={isCap ? 52 : 42} height={isCap ? 52 : 42} style={{ opacity: 0.95 }} />}
         </>
       )}
       {job && <g transform="translate(30,-30)"><circle r="14" fill="#ffb35c" stroke="#000" stroke-width="3" /><text y="7" text-anchor="middle" font-size="22" font-weight="700" fill="#000">!</text></g>}
@@ -297,7 +305,7 @@ function RegionPanel() {
       </div>
       <div class="scroll" style={{ padding: '14px 22px 20px', display: 'flex', flexDirection: 'column', gap: 12 }}>
         <div class="row" style={{ gap: 12 }}>
-          {fdef ? <img src={token(fdef.portrait)} style={{ width: 52, height: 52, borderRadius: 26, border: `3px solid ${col}` }} /> : <div style={{ width: 16, height: 52, background: col }} />}
+          {fdef ? <Token src={fdef.portrait} size={52} color={col} /> : <div style={{ width: 16, height: 52, background: col }} />}
           <div class="col grow" style={{ gap: 0 }}>
             <div class="ui" style={{ fontSize: 22, fontWeight: 700, color: col }}>{factionName(s, owner)}</div>
             <div class="tiny dim">{fdef ? `${fdef.leader}, ${fdef.leaderTitle}` : owner === PLAYER_FACTION_ID ? 'Your own hold' : 'Nobody\'s — yet'}</div>

@@ -367,3 +367,43 @@ add("ui", "metal", "Seamless tileable texture of dark rusted riveted steel plate
 add("ui", "paper", "Seamless tileable texture of old stained yellowed paper parchment with burn marks, flat lighting, no text", "1:1")
 add("ui", "leather", "Seamless tileable texture of dark worn cracked leather, flat lighting, no text", "1:1")
 add("ui", "concrete", "Seamless tileable texture of dark stained cracked concrete, flat lighting, no text", "1:1")
+
+# ---------------------------------------------------------------- v1.1 additions: faction halls, sigils, more recruits
+HALLS = {
+    "hall_cinder": "the Burnt King's throne room inside a colossal ruined reactor hall: a throne of welded turbine blades on a dais, roaring furnaces, black banners with an ember sigil, kneeling black-armored guards",
+    "hall_choir": "the Choir of Ash's chapel carved into violet glass on a crater rim: an altar of fused glass shards, hundreds of candles, ash-robed worshippers, eerie violet light through cracks",
+    "hall_iron": "the Iron Hundred's war room inside a concrete dam: a big table with a painted map, rifles on racks, old military radios, disciplined officers, harsh electric lamps",
+    "hall_pump": "the Oil Baron's office inside a refinery: brass pipes and valves everywhere, barrels of fuel, a huge chair made from a truck seat, gas lamps, oily haze",
+    "hall_rats": "the Rat King's court in a flooded subway station: a throne built from old turnstiles and rat skulls, green fungus lamps, dark water, hunched mutant courtiers",
+    "hall_dust": "the road queen's court inside a giant garage made of car wrecks: a throne welded from motorcycle parts, bonfires in oil drums, raiders with bikes, chains hanging",
+    "hall_salt": "the Salt Widow's audience chamber: white salt-crystal walls, silk awnings, ledgers and scales, turquoise ornaments, cool elegant light, guards in white wraps",
+}
+for k, d in HALLS.items():
+    add("interiors", k, SCENE + f"{d}. No people in the immediate foreground. " + STYLE, "16:9", "2K")
+
+SIGILS = {
+    "cinder": "a burning crown of turbine blades inside a flame, ember-orange and black",
+    "choir": "a violet eye weeping glass shards inside a circle of ash",
+    "iron": "a steel-blue fist gripping a water droplet on a riveted shield",
+    "pump": "an orange flare stack flame over crossed wrenches and an oil drop",
+    "rats": "a toxic-green rat skull wearing a crown over a sewer grate",
+    "dust": "a yellow winged motorcycle wheel with two crossed revolvers",
+    "salt": "a teal crystal set in silver scales with a caravan wheel",
+    "player": "a bone-white skull with a rising sun and crossed rifles",
+}
+for k, d in SIGILS.items():
+    add("sigils", k, f"Heraldic war-banner emblem for a post-apocalyptic faction: {d}, bold painted metal badge, strong silhouette, centered, isolated on a flat solid pure magenta #FF00FF background, no text, no letters.")
+
+MORE_RECRUITS = {
+    "gunhand": ["a lanky redheaded man with freckles and a scoped rifle, patched camo poncho", "a stern Maori woman with a chin tattoo and a belt-fed gun strap"],
+    "sawbones": ["a soft-spoken young Black woman with a nurse's headscarf and a bone saw on her belt", "a gruff old veteran medic with a gas mask hanging at his neck and bloodied bandages"],
+    "duelist": ["a grinning scarred young man with a braided topknot and a katana made from a leaf spring", "a cold-eyed older woman with a white streak in her hair and a rapier, long coat"],
+    "mindbender": ["a bald child-faced woman with a third eye tattooed on her forehead, glowing faintly", "a trembling thin man wearing a helmet of copper coils and wires"],
+    "prophet": ["a towering preacher with a long white beard and a burning book held aloft", "a young woman in white robes with ash handprints on her face and a staff of rebar"],
+    "roadboss": ["a grizzled biker with a silver beard and a leather jacket covered in patches", "a young fierce woman with a buzzcut, flame decals on her shoulder armor, a chain"],
+    "wrencher": ["a heavyset man with welding goggles and a hand made of servos", "a teenage girl with a toolbag and a homemade drone perched on her shoulder"],
+    "siren": ["an androgynous performer with silver face paint and a feathered collar, knowing smile", "a sultry older woman with a jeweled eyepatch and a cigarette holder"],
+}
+for pb, descs in MORE_RECRUITS.items():
+    for i, d in enumerate(descs, 5):
+        add("portraits", f"{pb}_{i}", PORTRAIT + f"The subject: {d}. " + STYLE)

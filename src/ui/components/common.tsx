@@ -1,7 +1,7 @@
 import type { ComponentChildren, JSX } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { audio } from '../../engine/audio';
-import { img, token } from '../../engine/assets';
+import { img, isPortrait, token, TOKEN_CROP } from '../../engine/assets';
 import type { Roll } from '../../engine/dice';
 import { fmtMod } from '../../engine/dice';
 
@@ -17,7 +17,11 @@ export function Stage({ children }: { children: ComponentChildren }) {
     };
     fit();
     window.addEventListener('resize', fit);
-    return () => window.removeEventListener('resize', fit);
+    // belt and braces for browsers without overflow: clip
+    const el = ref.current!;
+    const unscroll = () => { if (el.scrollTop || el.scrollLeft) { el.scrollTop = 0; el.scrollLeft = 0; } };
+    el.addEventListener('scroll', unscroll);
+    return () => { window.removeEventListener('resize', fit); el.removeEventListener('scroll', unscroll); };
   }, []);
   return (
     <div id="stage" ref={ref} style={{ transform: 'translate(-50%, -50%)' }}>
@@ -77,7 +81,7 @@ export function Portrait({ src, size = 120, w, h, style, class: cls }: { src: st
 export function Token({ src, size = 64, color = 'var(--ember)', style, dead }: { src: string; size?: number; color?: string; style?: JSX.CSSProperties; dead?: boolean }) {
   return (
     <div class="token-ring" style={{ width: size, height: size, borderColor: color, filter: dead ? 'grayscale(1) brightness(0.5)' : undefined, flexShrink: 0, ...style }}>
-      <img src={token(src)} />
+      <img src={token(src)} style={isPortrait(src) ? { width: `${100 / TOKEN_CROP.s}%`, height: `${100 / TOKEN_CROP.s}%`, maxWidth: 'none', marginLeft: `-${(TOKEN_CROP.x / TOKEN_CROP.s) * 100}%`, marginTop: `-${(TOKEN_CROP.y / TOKEN_CROP.s) * 100}%` } : undefined} />
     </div>
   );
 }

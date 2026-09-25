@@ -85,7 +85,7 @@ export function tapeScene(s: GameState, fid: string): Scene {
   const def = FACTIONS[fid];
   const f = s.factions[fid];
   return {
-    id: 'tape', title: `The Tape for ${def.leader}`, image: 'interiors/hall', portrait: def.portrait, speaker: def.leader,
+    id: 'tape', title: `The Tape for ${def.leader}`, image: `interiors/hall_${fid}`, portrait: def.portrait, speaker: def.leader,
     text: `The hall goes quiet as the tape crackles. The Burnt King's voice fills the room, calm and terrible, speaking to something that answers in screams. When it ends, ${def.leader} stares at the machine for a long time.`,
     choices: [
       { label: 'Make the case for war against the King', stat: 'hot', bonus: f.rep >= 40 ? 2 : f.rep >= 15 ? 1 : f.rep < -10 ? -1 : 0, hint: f.rep >= 15 ? 'Good reputation helps' : f.rep < -10 ? 'Poor reputation hurts' : undefined,

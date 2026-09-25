@@ -50,14 +50,23 @@ class AudioManager {
     }
   }
 
+  private bundle: Promise<Record<string, string>> | null = null;
+
   private load(name: string): Promise<AudioBuffer | null> {
     if (!this.ctx) return Promise.resolve(null);
     let p = this.loading.get(name);
     if (!p) {
       const ctx = this.ctx;
-      p = fetch(`./assets/sfx/${name}.mp3`)
-        .then((r) => r.arrayBuffer())
-        .then((a) => ctx.decodeAudioData(a))
+      this.bundle ??= fetch('./assets/sfx.json').then((r) => r.json()).catch(() => ({}));
+      p = this.bundle
+        .then((all) => {
+          const b64 = all[name];
+          if (!b64) throw new Error(`missing sfx ${name}`);
+          const bin = atob(b64);
+          const bytes = new Uint8Array(bin.length);
+          for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+          return ctx.decodeAudioData(bytes.buffer);
+        })
         .then((b) => { this.buffers.set(name, b); return b; })
         .catch(() => null);
       this.loading.set(name, p);

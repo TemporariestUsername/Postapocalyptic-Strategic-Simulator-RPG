@@ -37,10 +37,7 @@ def portraits() -> None:
         for f in sorted((RAW / cat).glob("*.png")):
             im = Image.open(f).convert("RGB")
             save_webp(im.resize((512, 512), Image.LANCZOS), OUT / cat / f"{f.stem}.webp", 82)
-            # face token: upper-centre crop
-            w, h = im.size
-            box = (int(w * 0.2), int(h * 0.04), int(w * 0.8), int(h * 0.64))
-            save_webp(im.crop(box).resize((256, 256), Image.LANCZOS), OUT / "tokens" / cat / f"{f.stem}.webp", 82)
+            # (face tokens are cropped at draw time, see TOKEN_CROP in src/engine/assets.ts)
 
 
 def scenes() -> None:
@@ -92,6 +89,13 @@ def props() -> None:
         im = chroma(Image.open(f))
         im.thumbnail((320, 320), Image.LANCZOS)
         save_webp(im, OUT / "props" / f"{f.stem}.webp", 85)
+
+
+def sigils() -> None:
+    for f in sorted((RAW / "sigils").glob("*.png")):
+        im = chroma(Image.open(f))
+        im.thumbnail((256, 256), Image.LANCZOS)
+        save_webp(im, OUT / "sigils" / f"{f.stem}.webp", 86)
 
 
 def icons() -> None:
@@ -195,8 +199,24 @@ def sfx() -> None:
         write_mp3(shot(src, length, which), OUT / "sfx" / f"{name}.mp3", -2)
 
 
+def bundle() -> None:
+    """Pack small files (icons, sfx) into two JSON bundles to keep the deploy small in file count."""
+    import base64
+    import json
+    import shutil
+    icons = {}
+    for cat in ("items", "abilities"):
+        for f in sorted((OUT / cat).glob("*.webp")):
+            icons[f"{cat}/{f.stem}"] = "data:image/webp;base64," + base64.b64encode(f.read_bytes()).decode()
+        shutil.rmtree(OUT / cat)
+    (OUT / "icons.json").write_text(json.dumps(icons))
+    sfx = {f.stem: base64.b64encode(f.read_bytes()).decode() for f in sorted((OUT / "sfx").glob("*.mp3"))}
+    shutil.rmtree(OUT / "sfx")
+    (OUT / "sfx.json").write_text(json.dumps(sfx))
+
+
 if __name__ == "__main__":
-    steps = sys.argv[1:] or ["portraits", "scenes", "props", "icons", "music", "sfx"]
+    steps = sys.argv[1:] or ["portraits", "scenes", "props", "sigils", "icons", "music", "sfx", "bundle"]
     for s in steps:
         print("step", s, flush=True)
         globals()[s]()

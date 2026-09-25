@@ -1,6 +1,6 @@
 import { useState } from 'preact/hooks';
 import { audio } from '../../engine/audio';
-import { img } from '../../engine/assets';
+import { img, sigil } from '../../engine/assets';
 import { STATS, STAT_INFO, fmtMod } from '../../engine/dice';
 import { deleteSave, listSaves, loadGame, SLOTS, type Slot } from '../../engine/save';
 import { FACTIONS, FACTION_IDS } from '../../data/factions';
@@ -267,9 +267,10 @@ function FactionsPanel({ close }: { close: () => void }) {
             const f = s.factions[fid];
             const wars = FACTION_IDS.filter((o) => o !== fid && s.factions[o].alive && atWar(s, fid, o));
             return (
-              <div key={fid} class="panel plain" style={{ padding: 14, display: 'flex', flexDirection: 'column', gap: 8, opacity: f.alive ? 1 : 0.45, borderColor: `${def.color}66` }}>
+              <div key={fid} class="panel plain" style={{ position: 'relative', padding: 14, display: 'flex', flexDirection: 'column', gap: 8, opacity: f.alive ? 1 : 0.45, borderColor: `${def.color}66` }}>
                 <div class="row" style={{ gap: 12 }}>
                   <Portrait src={def.portrait} size={96} style={{ borderColor: def.color, filter: f.alive ? undefined : 'grayscale(1)' }} />
+                  <img src={sigil(fid)!} style={{ position: 'absolute', right: 10, top: 10, width: 64, height: 64, opacity: 0.85 }} />
                   <div class="col" style={{ gap: 2 }}>
                     <div class="h3" style={{ color: def.color, fontSize: 22 }}>{def.name}</div>
                     <div class="small">{def.leader}</div>

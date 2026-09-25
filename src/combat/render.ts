@@ -3,7 +3,7 @@
  * BattleEvents; the renderer replays them as animations against its own "display" copy of each unit.
  */
 import { audio, weaponSfx } from '../engine/audio';
-import { img, loadImage, token } from '../engine/assets';
+import { img, isPortrait, loadImage, token, TOKEN_CROP } from '../engine/assets';
 import type { Roll } from '../engine/dice';
 import type { Battle, BattleEvent, Unit } from './types';
 
@@ -719,7 +719,12 @@ export class BattleRenderer {
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI * 2);
     ctx.clip();
-    if (im?.complete && im.naturalWidth) ctx.drawImage(im, x - r, y - r, r * 2, r * 2);
+    if (im?.complete && im.naturalWidth) {
+      if (isPortrait(u.portrait)) {
+        const W = im.naturalWidth, H = im.naturalHeight;
+        ctx.drawImage(im, W * TOKEN_CROP.x, H * TOKEN_CROP.y, W * TOKEN_CROP.s, H * TOKEN_CROP.s, x - r, y - r, r * 2, r * 2);
+      } else ctx.drawImage(im, x - r, y - r, r * 2, r * 2);
+    }
     if (d.flash > 0) {
       ctx.fillStyle = `rgba(255,60,40,${d.flash * 0.6})`;
       ctx.fillRect(x - r, y - r, r * 2, r * 2);

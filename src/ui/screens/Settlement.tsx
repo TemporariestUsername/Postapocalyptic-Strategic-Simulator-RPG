@@ -1,5 +1,5 @@
 import type { ComponentChildren } from 'preact';
-import { img } from '../../engine/assets';
+import { img, sigil } from '../../engine/assets';
 import { Rng } from '../../engine/rng';
 import { STATS, STAT_INFO, fmtMod } from '../../engine/dice';
 import { FACTIONS, PLAYER_FACTION_ID } from '../../data/factions';
@@ -42,7 +42,7 @@ export function SettlementScreen() {
   ];
   return (
     <div class="screen">
-      <div class="bg-cover" style={{ backgroundImage: `url(${img(ui.tab === 'bar' ? 'interiors/bar' : ui.tab === 'market' ? 'interiors/market' : ui.tab === 'clinic' ? 'interiors/clinic' : ui.tab === 'hall' ? 'interiors/hall' : ui.tab === 'tower' ? 'events/tower' : `towns/${r.town}`)})`, transition: 'background-image 0.4s', animation: 'kenburns 50s ease-in-out infinite alternate' }} />
+      <div class="bg-cover" style={{ backgroundImage: `url(${img(ui.tab === 'bar' ? 'interiors/bar' : ui.tab === 'market' ? 'interiors/market' : ui.tab === 'clinic' ? 'interiors/clinic' : ui.tab === 'hall' ? `interiors/hall_${owner}` : ui.tab === 'tower' ? 'events/tower' : `towns/${r.town}`)})`, transition: 'background-image 0.4s', animation: 'kenburns 50s ease-in-out infinite alternate' }} />
       <div class="screen" style={{ background: 'linear-gradient(90deg, rgba(6,4,3,0.92) 0%, rgba(6,4,3,0.55) 30%, rgba(6,4,3,0.15) 60%, rgba(6,4,3,0.3) 100%)' }} />
       <Hud />
       <div style={{ position: 'absolute', left: 50, top: 110, width: 430, zIndex: 20 }} class="col">
@@ -75,9 +75,10 @@ export function SettlementScreen() {
   );
 }
 
-function Head({ title, sub, right }: { title: string; sub?: ComponentChildren; right?: ComponentChildren }) {
+function Head({ title, sub, right, icon }: { title: string; sub?: ComponentChildren; right?: ComponentChildren; icon?: string }) {
   return (
     <div class="panel-head">
+      {icon && <img src={icon} style={{ width: 58, height: 58, filter: 'drop-shadow(0 2px 6px #000)' }} />}
       <div class="col grow" style={{ gap: 0 }}>
         <div class="h2">{title}</div>
         {sub && <div class="small dim">{sub}</div>}
@@ -272,7 +273,7 @@ function Hall() {
   const hostile = f.rep <= -40;
   return (
     <>
-      <Head title={`${def.leader}`} sub={def.leaderTitle} right={<span class={`chip ${f.rep >= 15 ? 'good' : f.rep <= -20 ? 'bad' : ''}`}>Reputation {f.rep > 0 ? '+' : ''}{f.rep}</span>} />
+      <Head title={`${def.leader}`} sub={def.leaderTitle} icon={sigil(fid) ?? undefined} right={<span class={`chip ${f.rep >= 15 ? 'good' : f.rep <= -20 ? 'bad' : ''}`}>Reputation {f.rep > 0 ? '+' : ''}{f.rep}</span>} />
       <div class="row grow" style={{ padding: 26, gap: 30, alignItems: 'flex-start', minHeight: 0 }}>
         <div class="col" style={{ width: 340, alignItems: 'center' }}>
           <Portrait src={def.portrait} size={330} style={{ borderColor: def.color, boxShadow: `0 0 40px ${def.color}55` }} />

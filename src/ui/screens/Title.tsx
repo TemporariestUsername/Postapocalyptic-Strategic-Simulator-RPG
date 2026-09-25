@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
 import { audio } from '../../engine/audio';
-import { CORE_IMAGES, img, preloadImages } from '../../engine/assets';
+import { CORE_IMAGES, img, loadIconBundle, preloadImages } from '../../engine/assets';
 import { latestSave, loadGame } from '../../engine/save';
 import { Btn, Embers, Frame } from '../components/common';
 import { G, emit, goto, loadState, openPanel, toast } from '../store';
@@ -9,7 +9,7 @@ export function BootScreen() {
   const [p, setP] = useState(0);
   const [ready, setReady] = useState(false);
   useEffect(() => {
-    void preloadImages(CORE_IMAGES, (d, t) => setP(d / t)).then(() => setReady(true));
+    void loadIconBundle().then(() => preloadImages(CORE_IMAGES, (d, t) => setP(d / t))).then(() => setReady(true));
   }, []);
   const start = () => {
     if (!ready) return;

@@ -93,7 +93,7 @@ function makeJob(s: GameState, fid: string, kind: JobKind, own: string[], enemie
 
 export function jobsAt(s: GameState, region: string): Job[] {
   const owner = s.regions[region].owner;
-  return s.jobs.filter((j) => j.state === 'offered' && j.issuer === owner && s.factions[owner]?.rep > -30);
+  return s.jobs.filter((j) => j.state === 'offered' && j.issuer === owner && s.factions[owner]?.rep > -30 && !(j.kind === 'deliver' && j.target === region));
 }
 
 export function activeJobs(s: GameState): Job[] {
@@ -205,7 +205,7 @@ export function jobScene(s: GameState, j: Job): Scene {
         choices: [{ label: 'Go in for the kill', resolve: () => ({ text: 'The guards close ranks around their champion.', fight: enemyFight(['champion', enemyTypes[0], enemyTypes[1], enemyTypes[2]], j.title) }) }] };
     case 'envoy': {
       const to = j.envoyTo!;
-      return { id: 'job', title: j.title, image: 'interiors/hall', portrait: FACTIONS[to].portrait, speaker: FACTIONS[to].leader,
+      return { id: 'job', title: j.title, image: `interiors/hall_${to}`, portrait: FACTIONS[to].portrait, speaker: FACTIONS[to].leader,
         text: `${FACTIONS[to].leader} hears you out in silence, fingers drumming. "${FACTIONS[j.issuer].leader} wants peace? Convince me."`,
         choices: [{ label: 'Make the case', stat: 'hot', resolve: (_s, r) => r!.outcome === 'strong' ? done('"...Fine. Tell your master we have an understanding."')
           : r!.outcome === 'weak' ? done('"A truce, then. For now. And you will carry my gift back." It costs you a little barter to seal it.', [fxBarter(s, -15)])

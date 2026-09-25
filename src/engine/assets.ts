@@ -1,14 +1,30 @@
 /** Asset paths and an image cache shared by the DOM UI and the canvas renderers. */
 const BASE = './assets/';
 
-export function img(path: string): string {
-  return `${BASE}${path}.webp`;
+/** Small icons ship as one JSON bundle of data URIs (see tools/process_assets.py bundle). */
+const icons: Record<string, string> = {};
+
+export async function loadIconBundle(): Promise<void> {
+  try {
+    const r = await fetch(`${BASE}icons.json`);
+    Object.assign(icons, await r.json());
+  } catch { /* icons will simply be missing */ }
 }
 
-/** Circular face-crop token for a portrait path like "portraits/duelist_1". */
+export function img(path: string): string {
+  return icons[path] ?? `${BASE}${path}.webp`;
+}
+
+/** Portrait used for a circular face token (the face crop is applied at draw time, see TOKEN_CROP). */
 export function token(path: string): string {
-  if (path.startsWith('abilities/')) return img(path);
-  return `${BASE}tokens/${path}.webp`;
+  return img(path);
+}
+
+/** Face region of a head-and-shoulders portrait, as fractions of the image (square). */
+export const TOKEN_CROP = { x: 0.2, y: 0.04, s: 0.6 };
+
+export function isPortrait(path: string): boolean {
+  return !path.startsWith('abilities/');
 }
 
 const cache = new Map<string, HTMLImageElement>();
@@ -43,6 +59,11 @@ export function preloadImages(srcs: string[], onProgress?: (done: number, total:
       }
     }
   });
+}
+
+/** Faction banner emblem (factions + 'player'); free holds have none. */
+export function sigil(faction: string): string | null {
+  return ['cinder', 'choir', 'iron', 'pump', 'rats', 'dust', 'salt', 'player'].includes(faction) ? img(`sigils/${faction}`) : null;
 }
 
 export const CORE_IMAGES = [

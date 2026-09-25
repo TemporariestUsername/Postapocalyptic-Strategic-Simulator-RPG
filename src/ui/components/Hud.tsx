@@ -1,4 +1,4 @@
-import { img } from '../../engine/assets';
+import { img, sigil } from '../../engine/assets';
 import { FACTIONS } from '../../data/factions';
 import { maxHp } from '../../game/characters';
 import { rankOf, rationsPerDay, warbandCap } from '../../game/actions';
@@ -36,14 +36,14 @@ export function Hud() {
       <Res icon="abilities/rally" value={`${s.warband}/${warbandCap(s)}`} tip={wbTip} />
       {s.pledged && (
         <div class="row" style={{ gap: 8 }}>
-          <Token src={FACTIONS[s.pledged].portrait} size={40} color={FACTIONS[s.pledged].color} />
+          <img src={sigil(s.pledged)!} style={{ width: 44, height: 44 }} />
           <div class="col" style={{ gap: 0 }}>
             <div class="tiny ui" style={{ color: FACTIONS[s.pledged].color, letterSpacing: '0.1em' }}>{FACTIONS[s.pledged].short.toUpperCase()}</div>
             <div class="ui" style={{ fontSize: 18, fontWeight: 600 }}>{rankOf(s).name} · {s.merit} merit</div>
           </div>
         </div>
       )}
-      {s.playerFaction && <div class="chip ember">Warlord of {s.playerFaction.name}</div>}
+      {s.playerFaction && <div class="row" style={{ gap: 8 }}><img src={sigil('player')!} style={{ width: 44, height: 44 }} /><div class="chip ember">Warlord of {s.playerFaction.name}</div></div>}
       <div class="row" style={{ gap: 8, position: 'relative' }}>
         <div style={{ position: 'relative' }}>
           <IconBtn icon="abilities/rally" label="Crew & Gear" hotkey="C" on={G.ui.panel === 'crew'} onClick={() => openPanel('crew')} />

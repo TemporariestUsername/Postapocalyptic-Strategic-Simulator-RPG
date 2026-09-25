@@ -95,8 +95,14 @@ export function hireCost(c: Character): number {
   return Math.round(pb.hireBase * (1 + (c.level - 1) * 0.55));
 }
 
+/** Faces offered at character creation. */
 export function portraitsFor(playbook: string): string[] {
   return [1, 2, 3, 4].map((i) => `portraits/${playbook}_${i}`);
+}
+
+/** Every face a hireable NPC of this playbook may wear. */
+export function recruitPortraitsFor(playbook: string): string[] {
+  return [1, 2, 3, 4, 5, 6].map((i) => `portraits/${playbook}_${i}`);
 }
 
 export function randomName(rng: Rng): string {
@@ -107,12 +113,12 @@ export function randomName(rng: Rng): string {
 export function randomRecruit(rng: Rng, id: string, level: number, usedPortraits: Set<string>, playbook?: string): Character {
   const pbs = playbook ? [playbook] : rng.shuffle([...PLAYBOOK_IDS]);
   for (const pb of pbs) {
-    const free = portraitsFor(pb).filter((p) => !usedPortraits.has(p));
+    const free = recruitPortraitsFor(pb).filter((p) => !usedPortraits.has(p));
     if (!free.length) continue;
     const portrait = rng.pick(free);
     usedPortraits.add(portrait);
     return makeCharacter(id, randomName(rng), pb, portrait, false, level, rng);
   }
   const pb = rng.pick(PLAYBOOK_IDS);
-  return makeCharacter(id, randomName(rng), pb, rng.pick(portraitsFor(pb)), false, level, rng);
+  return makeCharacter(id, randomName(rng), pb, rng.pick(recruitPortraitsFor(pb)), false, level, rng);
 }

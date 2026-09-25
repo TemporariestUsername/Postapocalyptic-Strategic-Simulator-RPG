@@ -1,14 +1,15 @@
-@import '@fontsource/oswald/400.css';
-@import '@fontsource/oswald/600.css';
-@import '@fontsource/oswald/700.css';
-@import '@fontsource/barlow/400.css';
-@import '@fontsource/barlow/500.css';
-@import '@fontsource/barlow/600.css';
-@import '@fontsource/barlow/400-italic.css';
-@import '@fontsource/barlow-condensed/500.css';
-@import '@fontsource/barlow-condensed/600.css';
-@import '@fontsource/barlow-condensed/700.css';
-@import '@fontsource/special-elite/400.css';
+/* Fonts (SIL OFL, via Fontsource) — latin woff2 only */
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/oswald-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/oswald-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/oswald-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Barlow'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/barlow-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Barlow'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/barlow-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Barlow'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/barlow-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Barlow'; font-style: italic; font-weight: 400; font-display: swap; src: url('../fonts/barlow-latin-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Barlow Condensed'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/barlow-condensed-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Barlow Condensed'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/barlow-condensed-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Barlow Condensed'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/barlow-condensed-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Special Elite'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/special-elite-latin-400-normal.woff2') format('woff2'); }
 
 :root {
   --bg: #0b0907;
@@ -58,6 +59,7 @@ html, body {
   height: 1080px;
   transform-origin: 0 0;
   overflow: hidden;
+  overflow: clip; /* never scrollable: focus/scrollIntoView must not shift the stage */
   background: var(--bg);
   font-size: 22px;
   line-height: 1.35;
